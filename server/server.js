@@ -1,23 +1,32 @@
-const express = require("express");
-const {sequelize, syncDB} = require("./src/config/db");
+import express from "express";
+import cors from "cors"
+import * as dotenv from "dotenv"
 
-require("dotenv").config();
+import UserRoute from "./src/users/userRouter.js"
+import db from "./src/config/db.js";
+
+dotenv.config()
 
 const app = express();
-app.use(express.json());
+app.use(cors({
+    methods: '*',
+    origin: '*'
+}));
 
-// testing api
-app.get('/', (req, res) => {
-    res.send("hello world") 
-})
+app.use(express.json());
+app.use(UserRoute)
 
 const PORT = process.env.PORT || 5000;
 
-// Synchronize DB and start server
-syncDB()
-    .then(() => {
-        app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-    })
-    .catch((error) => {
-        console.error("Failed to start server due to database synchronization issue:", error);
-    });
+// Sync database once when the server starts
+(async () => {
+    try {
+      await db.sync(); // Runs only once on server startup
+      console.log("Database synced successfully.");
+    } catch (error) {
+      console.error("Failed to sync database:", error);
+    }
+  })();
+
+  
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
