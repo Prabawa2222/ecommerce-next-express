@@ -3,6 +3,9 @@ import cors from "cors";
 import * as dotenv from "dotenv";
 
 import UserRoute from "./src/users/userRouter.js";
+import ProductRoute from "./src/products/productRouter.js";
+import OrderRoute from "./src/orders/orderRouter.js";
+
 import db from "./src/config/db.js";
 
 dotenv.config();
@@ -16,7 +19,7 @@ app.use(
 );
 
 app.use(express.json());
-app.use(UserRoute);
+app.use(UserRoute, ProductRoute, OrderRoute);
 
 const PORT = process.env.PORT || 5000;
 
