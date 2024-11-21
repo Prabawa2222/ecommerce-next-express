@@ -33,4 +33,19 @@ const PORT = process.env.PORT || 5000;
   }
 })();
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const server = app.listen(PORT, () =>
+  console.log(`Server running on port ${PORT}`)
+);
+
+
+// Hanle port in use
+server.on("error", (error) => {
+  if (error.code === "EADDRINUSE") {
+    console.error(`Port ${PORT} is already in use. Trying port 8080...`);
+    app.listen(8080, () => {
+      console.log("Server running on fallback port 8080");
+    });
+  } else {
+    console.error("An error occurred:", error);
+  }
+});
