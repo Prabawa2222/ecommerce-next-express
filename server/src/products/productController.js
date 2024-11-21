@@ -25,7 +25,7 @@ export const getProductById = async (req, res) => {
 
     const product = await Product.findOne({
       where: { id },
-      attributes: ["productName", "description", "price", "stock"],
+      // attributes: ["name", "description", "price", "stock"], // get ID, tampilkan semua karena akan berguna property lainya
     });
 
     if (!product) {
@@ -53,10 +53,10 @@ export const getProductById = async (req, res) => {
 // Create product
 export const createProduct = async (req, res) => {
   try {
-    const { productName, description, price, stock } = req.body;
+    const { name, description, price, stock } = req.body;  // rename productName to name
 
     const newProduct = await Product.create({
-      productName,
+      name,                                                 // rename productName to name
       description,
       price,
       stock,
@@ -66,12 +66,7 @@ export const createProduct = async (req, res) => {
       success: true,
       statusCode: 201,
       message: "Product has been created successfully",
-      newProduct: {
-        id: newProduct.id,
-        productName: newProduct.productName,
-        price: newProduct.price,
-        stock: newProduct.stock,
-      },
+      product: newProduct                                   // return seluruh product property, bisa berguna pada proses bisnin lain
     });
   } catch (error) {
     res.status(500).send({
@@ -86,15 +81,15 @@ export const deleteProduct = async (req, res) => {
   try {
     const { id } = req.params;
 
-    const product = Product.destroy({
+    const product = await Product.destroy({             // add await
       where: {
         id,
       },
     });
 
-    if (!product) {
-      res.status(404).send({
-        success,
+    if (product === 0) {                              // handle if id doesn't exist
+      return res.status(404).send({
+        success: false,
         statusCode: 404,
         message: `Product not found with ID: ${id}`,
       });
@@ -116,33 +111,32 @@ export const deleteProduct = async (req, res) => {
 
 export const updateProductById = async (req, res) => {
   try {
-    const { id } = req.params.uid;
-    const { productName, description, price, stock } = req.body;
+    const { id } = req.params;                                  // remove .uid for destruction
+    const { name, description, price, stock } = req.body;       // productName => name
 
-    const product = await Product.findOne(id, {
-      productName,
-      description,
-      price,
-      stock,
-    });
+    const product = await Product.findOne({                     // handle findById
+      where: {
+        id
+      }
+    })
 
     if (!product) {
-      res.status(404).send({
-        success,
+      return res.status(404).send({
+        success: false,                               // reassigne value of success
         statusCode: 404,
         message: `Product not found with ID : ${id}`,
       });
     }
 
-    const updatedProduct = await Product.update(id, {
-      productName,
+    const updatedProduct = await Product.update({
+      name,                                           // productName => name
       description,
       price,
       stock,
-    });
+    }, {where: {id}});                                 // update in suqelize are (value, id)
 
     res.status(200).send({
-      success,
+      success: true,                                  // reassign value success
       status: 200,
       message: `Product has been updated successfully`,
       updatedProduct,

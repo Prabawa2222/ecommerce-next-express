@@ -10,10 +10,11 @@ const Product = db.define(
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true,
       allowNull: false,
-    },
-    productName: {
+    },    
+    name: {                       // from productName to name =>  lebih realistis hanya ada satu property nama ditabel ini
       type: DataTypes.STRING,
       allowNull: false,
+      unique: true                // buat unique untuk validasi duplikasi product
     },
     description: {
       type: DataTypes.TEXT,
