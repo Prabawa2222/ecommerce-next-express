@@ -8,7 +8,7 @@ export const getUsers = async (req, res) => {
     const users = await User.findAll(); // find all users
 
     res.status(200).send({
-      success,
+      success: true,
       statusCode: 200,
       users,
     });
@@ -24,7 +24,7 @@ export const getUsers = async (req, res) => {
 // Get user by Id
 export const getUsersById = async (req, res) => {
   try {
-    const { id } = req.params.uid; // take request
+    const { id } = req.params; // take request
 
     const user = await User.findOne({
       where: {
@@ -41,7 +41,7 @@ export const getUsersById = async (req, res) => {
     }
 
     res.status(200).send({
-      success,
+      success: true,
       statusCode: 200,
       user,
     });
@@ -57,7 +57,7 @@ export const getUsersById = async (req, res) => {
 // Delete user by Id
 export const deleteUser = async (req, res) => {
   try {
-    const { id } = req.params.uid; // take request
+    const { id } = req.params; // take request
 
     const user = await User.destroy({
       where: {
@@ -74,7 +74,7 @@ export const deleteUser = async (req, res) => {
     }
 
     res.status(200).send({
-      success,
+      success: true,
       statusCode: 200,
       message: `User has been deleted successfully`,
     });
@@ -139,7 +139,7 @@ export const createUser = async (req, res) => {
 // Update user by Id
 export const updateUserById = async (req, res) => {
   try {
-    const { id } = req.params.uid; // take request
+    const { id } = req.params; // take request
     const { name, email, password } = req.body;
 
     const user = await User.findOne({
@@ -156,19 +156,38 @@ export const updateUserById = async (req, res) => {
       });
     }
 
-    const newUser = await User.update(id, {
-      name,
-      email,
-      password,
-    });
+    // Updated Patching User
+    // const newUser = await User.update(id, {
+    //   name,
+    //   email,
+    //   password,
+    // });
 
-    const newestUser = await User.create(newUser);
+    // const newestUser = await User.create(newUser);
+    // Updated user details
+
+    const [updateRowCount] = await User.update(
+      {name, email, password},
+      {where: {id}}
+    )
+
+    if (updateRowCount === 0) {
+      return res.status(400).send({
+        success: false,
+        statusCode: 400,
+        message: "No changes were made to the user"
+      })
+    }
+
+    const updatedUser = await User.findOne({
+      where: {id}
+    })
 
     res.status(200).send({
-      success,
+      success: true,
       statusCode: 200,
       message: `User has been updated successfully`,
-      newestUser,
+      updatedUser,
     });
   } catch (error) {
     res.status(500).send({
