@@ -50,7 +50,7 @@ export default function SearchBox() {
         <div className="grow">
           <Input
             type="text"
-            placeholder="What are you looking for..."
+            placeholder="Search for products..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="border-none bg-transparent shadow-none outline-none focus-within:ring-0 focus-visible:ring-0 text-base sm:text-base"

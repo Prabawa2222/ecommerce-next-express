@@ -94,23 +94,26 @@ export default function Navbar() {
               </div>
             </CustomDrawerContent>
           </Drawer>
-
           {/* Logo */}
           <div>
             <Icons.Logo />
           </div>
 
-          {/* Search */}
-          <div>
-            <Dialog>
-              <DialogTrigger>
-                <SearchIcon className="cursor-pointer" />
-              </DialogTrigger>
-              <DialogContent className="bg-brand-black-800 text-brand-white-200 border-none rounded-none sm:rounded-none p-0 top-[30%]">
-                <DialogTitle className="hidden"></DialogTitle>
-                <SearchBox />
-              </DialogContent>
-            </Dialog>
+          <div className="flex justify-center gap-4">
+            {/* Search */}
+            <div>
+              <Dialog>
+                <DialogTrigger>
+                  <SearchIcon className="cursor-pointer" />
+                </DialogTrigger>
+                <DialogContent className="bg-brand-black-800 text-brand-white-200 border-none rounded-none sm:rounded-none p-0 top-[30%]">
+                  <DialogTitle className="hidden"></DialogTitle>
+                  <SearchBox />
+                </DialogContent>
+              </Dialog>
+            </div>
+            {/* User */}
+            [USER]
           </div>
         </div>
       </MaxWidthWrapper>
