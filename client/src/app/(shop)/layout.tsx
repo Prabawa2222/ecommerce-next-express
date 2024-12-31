@@ -1,3 +1,4 @@
+import Navbar from "@/components/shared/navbar";
 import { ReactNode } from "react";
 
 type Props = {
@@ -6,7 +7,8 @@ type Props = {
 
 export default function ShopLayout({ children }: Props) {
   return (
-    <div className="bg-brand-cod-gray-950 text-brand-alto-200 min-h-screen w-full">
+    <div className="bg-brand-black-900 text-brand-white-200 min-h-screen w-full">
+      <Navbar />
       <main>{children}</main>
     </div>
   );

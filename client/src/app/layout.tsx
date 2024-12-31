@@ -1,3 +1,4 @@
+import Providers from "@/components/shared/providers";
 import type { Metadata } from "next";
 import { fontsora } from "./fonts";
 import "./globals.css";
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fontsora.variable} antialiased font-sans`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
