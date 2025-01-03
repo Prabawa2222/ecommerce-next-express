@@ -25,8 +25,12 @@ import { NAVLINK } from "./constant";
 
 export default function Navbar() {
   return (
-    <nav className="border-b-[0.5px] border-zinc-900">
-      <MaxWidthWrapper className="py-7">
+    <nav className="bg-transparent relative">
+      {/* Logo */}
+      <div className="absolute flex justify-center items-center inset-0 cursor-pointer">
+        <Icons.Logo className="z-30" />
+      </div>
+      <MaxWidthWrapper className="py-7 z-20 relative">
         <div className="flex justify-between">
           {/* Burger Menu */}
           <Drawer direction="left">
@@ -94,10 +98,6 @@ export default function Navbar() {
               </div>
             </CustomDrawerContent>
           </Drawer>
-          {/* Logo */}
-          <div>
-            <Icons.Logo />
-          </div>
 
           <div className="flex justify-center gap-4">
             {/* Search */}

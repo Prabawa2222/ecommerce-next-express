@@ -61,6 +61,7 @@ export default function SearchBox() {
       <div className="flex items-start gap-4 px-4 py-4">
         <p className="text-xs py-2 uppercase font-medium">Category: </p>
         <div className="grow flex flex-wrap gap-2">
+          {/* TODO: use real data from api instead */}
           {CATEGORY_FILTER.map((item) => (
             <Button
               key={item.name}
@@ -89,6 +90,7 @@ export default function SearchBox() {
           </div>
         </div>
       )}
+      {/* TODO:Make it scrollable */}
       {!isLoading && data && (
         <div className="absolute top-full z-10 mt-3 w-full rounded-none bg-brand-black-800 py-5">
           <div className="space-y-5">
