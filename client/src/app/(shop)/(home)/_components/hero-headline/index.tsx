@@ -29,24 +29,30 @@ export default function HeroHeadline() {
     [0, 0, 1, 1, 0, 0]
   );
 
+  const headingTextZindex = useTransform(
+    sectionContainer.scrollYProgress,
+    [0, 0.1, 0.2, 0.8, 0.9, 1],
+    [0, 0, 10, 10, 10, -50]
+  );
+
+  console.log(headingTextOpacity);
+
   return (
     <section ref={section} className="min-h-screen py-12 px-6 relative">
       <div className="flex flex-col items-center justify-center gap-12">
         <motion.div
-          initial={{ opacity: 0, y: 150 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          initial={{ opacity: 0 }}
           style={{
+            zIndex: headingTextZindex,
             opacity: headingTextOpacity,
           }}
-          className="flex flex-col w-full h-full justify-center items-center gap-4 fixed top-0 z-10"
+          className="flex flex-col w-full h-full justify-center items-center gap-4 fixed top-0"
         >
           <p className="uppercase text-sm">Welcome To</p>
           <h1 className="uppercase text-[44px] font-bold">Eh-Commerce</h1>
         </motion.div>
 
         <motion.div ref={carousel} className="h-[300vh] w-full">
-          {/* WHY this not sticky?? */}
           <div className="sticky top-0 overflow-hidden">
             <motion.div
               className="relative flex items-center gap-6 h-[100vh]"

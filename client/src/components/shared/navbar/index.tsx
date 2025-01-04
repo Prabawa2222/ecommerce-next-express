@@ -28,7 +28,7 @@ export default function Navbar() {
     <nav className="bg-transparent relative">
       {/* Logo */}
       <div className="absolute flex justify-center items-center inset-0 cursor-pointer">
-        <Icons.Logo className="z-30" />
+        <Icons.Logo className="z-40" />
       </div>
       <MaxWidthWrapper className="py-7 z-20 relative">
         <div className="flex justify-between">
