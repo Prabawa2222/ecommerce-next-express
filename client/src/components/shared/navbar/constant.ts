@@ -45,6 +45,11 @@ export const NAVLINK: NavlinkType[] = [
     display: "Faq",
     href: "/faq",
   },
+  {
+    type: "normal",
+    display: "Contact",
+    href: "/contact",
+  },
 ];
 
 export const CATEGORY_FILTER = [
