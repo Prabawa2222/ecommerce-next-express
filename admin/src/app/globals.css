@@ -16,7 +16,7 @@ body {
 }
 
 body[data-scroll-locked][data-scroll-locked] {
-  overflow: auto !important;
+  overflow-y: scroll !important;
 }
 
 html,
