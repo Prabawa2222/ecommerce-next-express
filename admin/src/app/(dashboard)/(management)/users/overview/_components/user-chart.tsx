@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 import { fetchAllUser } from '@/lib/api/services'
 import { IUserJson } from '@/lib/types/json'
-import { MonthType } from '@/lib/types/types'
+import { months } from '@/lib/contants/chart'
 import DataChart, { ChartDataType } from '@/components/chart/data-chart'
 
 type UsersChartProps = {
@@ -13,21 +13,6 @@ type UsersChartProps = {
 
 const UsersChart = ({ className }: UsersChartProps) => {
   const [userChartData, setUserChartData] = useState<ChartDataType[]>([])
-
-  const months: MonthType[] = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ]
 
   const getUsersChartData = async () => {
     const users: IUserJson[] = await fetchAllUser()

@@ -8,7 +8,7 @@ import {
   fetchAllProduct
 } from '@/lib/api/services'
 import { ICategoryJson, IOrderJson, IProductJson } from '@/lib/types/json'
-import { MonthType } from '@/lib/types/types'
+import { months } from '@/lib/contants/chart'
 import MultipleDataChart, {
   ChartDataType
 } from '@/components/chart/multiple-data-chart'
@@ -21,21 +21,6 @@ const CategoryChart = ({ className }: CategoryChartProps) => {
   const [categoryChartData, setCategoryChartData] = useState<ChartDataType[]>(
     []
   )
-
-  const months: MonthType[] = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ]
 
   const getCategoryChartData = async () => {
     const orders: IOrderJson[] = await fetchAllOrder()
