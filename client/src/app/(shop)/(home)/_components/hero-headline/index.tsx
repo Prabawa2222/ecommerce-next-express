@@ -4,11 +4,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import useMeasure from "react-use-measure";
 import { HEADLINE_IMAGES } from "./constant";
 
 export default function HeroHeadline() {
   const section = useRef<HTMLTableSectionElement>(null);
   const carousel = useRef<HTMLDivElement>(null);
+  const [ref, { width }] = useMeasure();
+  const [refContainer, { width: widthContainer }] = useMeasure();
 
   const carouselContainer = useScroll({
     target: carousel,
@@ -16,7 +19,7 @@ export default function HeroHeadline() {
   const xcarousel = useTransform(
     carouselContainer.scrollYProgress,
     [0, 1],
-    ["0%", "-150%"]
+    [0, -(width - widthContainer)]
   );
 
   const sectionContainer = useScroll({
@@ -35,11 +38,12 @@ export default function HeroHeadline() {
     [0, 0, 10, 10, 10, -50]
   );
 
-  console.log(headingTextOpacity);
-
   return (
     <section ref={section} className="min-h-screen py-12 px-6 relative">
-      <div className="flex flex-col items-center justify-center gap-12">
+      <div
+        ref={refContainer}
+        className="flex flex-col items-center justify-center gap-12"
+      >
         <motion.div
           initial={{ opacity: 0 }}
           style={{
@@ -55,7 +59,8 @@ export default function HeroHeadline() {
         <motion.div ref={carousel} className="h-[300vh] w-full">
           <div className="sticky top-0 overflow-hidden">
             <motion.div
-              className="relative flex items-center gap-6 h-[100vh]"
+              ref={ref}
+              className="flex items-center justify-start gap-6 h-[100vh] w-max"
               style={{
                 x: xcarousel,
               }}
