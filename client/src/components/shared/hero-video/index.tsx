@@ -23,7 +23,7 @@ export default function HeroVideo() {
       <motion.video
         className="absolute object-cover inset-0 h-screen w-full"
         src="/hero-video.mp4"
-        autoPlay
+        autoPlay={false}
         loop
         muted
         style={{

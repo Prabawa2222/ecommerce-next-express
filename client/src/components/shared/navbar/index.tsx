@@ -18,14 +18,33 @@ import { cn } from "@/lib/utils";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { SearchIcon, X } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Icons from "../icons";
 import MaxWidthWrapper from "../max-width-wrapper";
 import SearchBox from "../search-box";
 import { NAVLINK } from "./constant";
 
 export default function Navbar() {
+  const [isScrolledDown, setIsScrolledDown] = useState(false);
+  // const [isScrolledUp, setIsScrolledUp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolledDown(window.scrollY > 60);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-transparent relative">
+    <nav
+      className={cn(
+        "relative transition-all ease-out hover:bg-brand-black-900",
+        isScrolledDown && "bg-brand-black-900 duration-4000",
+        !isScrolledDown && "bg-transparent duration-300"
+      )}
+      style={{}}
+    >
       {/* Logo */}
       <div className="absolute flex justify-center items-center inset-0 cursor-pointer">
         <Icons.Logo className="z-40" />
