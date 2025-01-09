@@ -1,0 +1,2845 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "nadiya",
+      "email": "nadiya@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/90.jpg",
+      "role": "user",
+      "createdAt": "2024-10-15T10:00:00Z",
+      "updatedAt": "2024-10-15T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "zevanya",
+      "email": "admin@example.com",
+      "password": "admin2345",
+      "image": "https://randomuser.me/api/portraits/women/17.jpg",
+      "role": "admin",
+      "createdAt": "2024-10-20T14:00:00Z",
+      "updatedAt": "2024-10-20T14:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "shira",
+      "email": "shira@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/57.jpg",
+      "role": "user",
+      "createdAt": "2024-11-01T09:00:00Z",
+      "updatedAt": "2024-11-01T09:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "purta",
+      "email": "purta@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/11.jpg",
+      "role": "user",
+      "createdAt": "2024-11-10T08:30:00Z",
+      "updatedAt": "2024-11-10T08:30:00Z"
+    },
+    {
+      "id": "5",
+      "name": "ariska",
+      "email": "ariska@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/40.jpg",
+      "role": "user",
+      "createdAt": "2024-11-15T15:45:00Z",
+      "updatedAt": "2024-11-15T15:45:00Z"
+    },
+    {
+      "id": "6",
+      "name": "dhiya",
+      "email": "dhiya@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/71.jpg",
+      "role": "user",
+      "createdAt": "2024-11-20T10:00:00Z",
+      "updatedAt": "2024-11-20T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "name": "hayati",
+      "email": "hayati@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/54.jpg",
+      "role": "user",
+      "createdAt": "2024-11-25T12:00:00Z",
+      "updatedAt": "2024-11-25T12:00:00Z"
+    },
+    {
+      "id": "8",
+      "name": "laila",
+      "email": "laila@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/10.jpg",
+      "role": "user",
+      "createdAt": "2024-12-01T10:00:00Z",
+      "updatedAt": "2024-12-01T10:00:00Z"
+    },
+    {
+      "id": "9",
+      "name": "nara",
+      "email": "nara@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/65.jpg",
+      "role": "user",
+      "createdAt": "2024-12-05T14:00:00Z",
+      "updatedAt": "2024-12-05T14:00:00Z"
+    },
+    {
+      "id": "10",
+      "name": "dian",
+      "email": "dian@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/91.jpg",
+      "role": "user",
+      "createdAt": "2024-12-10T09:30:00Z",
+      "updatedAt": "2024-12-10T09:30:00Z"
+    },
+    {
+      "id": "11",
+      "name": "gina",
+      "email": "gina@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/24.jpg",
+      "role": "user",
+      "createdAt": "2024-12-15T13:00:00Z",
+      "updatedAt": "2024-12-15T13:00:00Z"
+    },
+    {
+      "id": "12",
+      "name": "fadia",
+      "email": "fadia@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/51.jpg",
+      "role": "user",
+      "createdAt": "2025-01-01T09:00:00Z",
+      "updatedAt": "2025-01-01T09:00:00Z"
+    },
+    {
+      "id": "13",
+      "name": "hania",
+      "email": "hania@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/79.jpg",
+      "role": "user",
+      "createdAt": "2025-01-01T09:00:00Z",
+      "updatedAt": "2025-01-01T09:00:00Z"
+    },
+    {
+      "id": "14",
+      "name": "zaira",
+      "email": "zaira@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/33.jpg",
+      "role": "user",
+      "createdAt": "2025-01-01T09:00:00Z",
+      "updatedAt": "2025-01-01T09:00:00Z"
+    },
+    {
+      "id": "15",
+      "name": "nisa",
+      "email": "nisa@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/50.jpg",
+      "role": "user",
+      "createdAt": "2025-01-01T09:00:00Z",
+      "updatedAt": "2025-01-01T09:00:00Z"
+    },
+    {
+      "id": "16",
+      "name": "khalida",
+      "email": "khalida@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/53.jpg",
+      "role": "user",
+      "createdAt": "2025-01-05T15:00:00Z",
+      "updatedAt": "2025-01-05T15:00:00Z"
+    },
+    {
+      "id": "17",
+      "name": "zahra",
+      "email": "zahra@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/49.jpg",
+      "role": "user",
+      "createdAt": "2025-01-10T16:00:00Z",
+      "updatedAt": "2025-01-10T16:00:00Z"
+    },
+    {
+      "id": "18",
+      "name": "amira",
+      "email": "amira@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/80.jpg",
+      "role": "user",
+      "createdAt": "2025-01-15T12:30:00Z",
+      "updatedAt": "2025-01-15T12:30:00Z"
+    },
+    {
+      "id": "19",
+      "name": "farah",
+      "email": "farah@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/92.jpg",
+      "role": "user",
+      "createdAt": "2025-01-20T11:00:00Z",
+      "updatedAt": "2025-01-20T11:00:00Z"
+    },
+    {
+      "id": "20",
+      "name": "azra",
+      "email": "azra@example.com",
+      "password": "77772345",
+      "image": "https://randomuser.me/api/portraits/women/9.jpg",
+      "role": "user",
+      "createdAt": "2025-01-25T10:45:00Z",
+      "updatedAt": "2025-01-25T10:45:00Z"
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike Vaporfly 3",
+      "id": "nike-vaporfly-3",
+      "description": "Catch 'em if you can. Giving you race-day speed to conquer any distance, the Nike Vaporfly 3 is made for the chasers, the racers and the elevated pacers who can't turn down the thrill of the pursuit. We reworked the leader of the super shoe pack and tuned the engine underneath to help you chase personal bests from a 10K to marathon. From elite runners to those new to racing, this versatile road-racing workhorse is for those who see speed as a gateway to more miles and more seemingly uncatchable highs.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+ZOOMX+VAPORFLY+NEXT+3-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrWk9PTVgrVkFQT1JGTFkrTkVYVCszLUEucG5nIiwiaWF0IjoxNzM1MTI1NjM2LCJleHAiOjE3Mzc3MTc2MzZ9.mMlXd5RsZerPgvzOetUmYm8LOaCUEZoarH2AW2Q24lo&t=2024-12-25T11%3A20%3A37.013Z",
+      "price": 3399000,
+      "stock": 20,
+      "createdAt": "2024-12-28T10:00:00Z",
+      "updatedAt": "2024-12-28T10:00:00Z"
+    },
+    {
+      "name": "Nike Tiempo Legend 10 Club",
+      "id": "nike-tiempo-legend-10-club",
+      "description": "Even Legends find ways to evolve. Whether you're starting out or just playing for fun, the latest iteration of this Club boot gets you on the pitch without compromising on quality. The synthetic leather contours to your foot and doesn't overstretch, giving you better control. Lighter and sleeker than any other Tiempo to date, the Legend 10 is for any position on the pitch, whether you're sending a pinpoint pass through the defence or tracking back to stop a break-away.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/LEGEND+10+CLUB+FG_MG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0xFR0VORCsxMCtDTFVCK0ZHX01HLUEucG5nIiwiaWF0IjoxNzM1MTI1ODk0LCJleHAiOjE3Mzc3MTc4OTR9.7VCHFN8_DHzagzyGcyaTPgbtx5CxDwqBTxtK8CrdH6w&t=2024-12-25T11%3A24%3A54.862Z",
+      "price": 799000,
+      "stock": 20,
+      "createdAt": "2024-12-28T10:00:00Z",
+      "updatedAt": "2024-12-28T10:00:00Z"
+    },
+    {
+      "name": "NikeCourt Vapor 11 HC Premium",
+      "id": "nike-court-vapor-11-hc-premium",
+      "description": "Lower to the court and loaded with speed components, the Vapor 11 helps you play at a fast pace with enough support for your match. Mainstays like the moulded sidewall and breathable upper complement the durable, quick-moving design that you've come to know and love. This version has graphics that nod to NYC's legendary tournament.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/M+NIKE+ZOOM+VAPOR+11+HC+PRM-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL00rTklLRStaT09NK1ZBUE9SKzExK0hDK1BSTS1BLnBuZyIsImlhdCI6MTczNTEyNjA5OSwiZXhwIjoxNzM3NzE4MDk5fQ.USvaKr5FOysM8l_JGtR1m0oH5w-Fy2DrhGSmrIJ36Gc&t=2024-12-25T11%3A28%3A20.255Z",
+      "price": 2669000,
+      "stock": 4,
+      "createdAt": "2024-12-28T10:00:00Z",
+      "updatedAt": "2024-12-28T10:00:00Z"
+    },
+    {
+      "name": "Nike Phantom Luna 2 Elite Electric",
+      "id": "nike-phantom-luna-2-elite-electric",
+      "description": "Obsessed with perfecting your craft? We made this for you. In the middle of the storm, with chaos swirling all around you, you've calmly found the final third of the pitch, thanks to your uncanny mix of on-ball guile and grace. Go and finish the job in the Phantom Luna 2 Elite. Revolutionary Nike Gripknit covers the striking area of the boot while Nike Cyclone 360 traction helps guide your unscripted agility. We design Elite boots for you and the world's biggest stars to give you high-level quality, because you demand greatness from yourself and your footwear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/PHANTOM+LUNA+II+ELITE+FG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL1BIQU5UT00rTFVOQStJSStFTElURStGRy1BLnBuZyIsImlhdCI6MTczNTE0NzUyNSwiZXhwIjoxNzM3NzM5NTI1fQ.PRPTkE6vpzleoWUqLQGaqMiiUOoPJnygDRZ60V_T6lc&t=2024-12-25T17%3A25%3A26.080Z",
+      "price": 4539000,
+      "stock": 20,
+      "createdAt": "2024-12-30T10:00:00Z",
+      "updatedAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "name": "Nike Mercurial Superfly 10 Elite",
+      "id": "nike-mercurial-superfly-10-elite",
+      "description": "Obsessed with speed? So are the game's biggest stars. That's why we made this Elite boot with an improved 3/4-length Air Zoom unit. It gives you and the sport's fastest players the propulsive feel needed to break through the back line. The result is the most responsive Mercurial we've ever made, because you demand greatness from yourself and your footwear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/ZM+SUPERFLY+10+ELITE+FG-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL1pNK1NVUEVSRkxZKzEwK0VMSVRFK0ZHLUEucG5nIiwiaWF0IjoxNzM1MTQ3NzY1LCJleHAiOjE3Mzc3Mzk3NjV9.LpfN9o_TOwF_3z7NRrqRJm0k6EdGc3ltDOFBtTpyu3I&t=2024-12-25T17%3A29%3A26.248Z",
+      "price": 4329000,
+      "stock": 22,
+      "createdAt": "2024-12-30T10:00:00Z",
+      "updatedAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "name": "Nike Pegasus 41",
+      "id": "nike-pegasus-41",
+      "description": "Responsive cushioning in the Pegasus provides an energised ride for everyday road running. Experience lighter-weight energy return with dual Air Zoom units and a ReactX foam midsole. Plus, improved engineered mesh on the upper decreases weight and increases breathability.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/AIR+ZOOM+PEGASUS+41-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0FJUitaT09NK1BFR0FTVVMrNDEtQS5wbmciLCJpYXQiOjE3MzUxNDgwMDQsImV4cCI6MTczNzc0MDAwNH0.RrkQiIJEIaXjWMgoPez0L5icK06NHeKx8g0Kxvzu9PY&t=2024-12-25T17%3A33%3A25.275Z",
+      "price": 2099000,
+      "stock": 8,
+      "createdAt": "2024-12-30T10:00:00Z",
+      "updatedAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "name": "Nike Air Max Correlate",
+      "id": "nike-air-max-correlate",
+      "description": "The Air Max Correlate brings you a throwback design with modern updates. The rich mix of materials echoes early '90s style, while visible Max Air cushioning adds comfort that lasts.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+AIR+MAX+CORRELATE-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrQUlSK01BWCtDT1JSRUxBVEUtQS5wbmciLCJpYXQiOjE3MzUxNDgzNDUsImV4cCI6MTczNzc0MDM0NX0.lvd9AP73F3Y6fjOfnJ3U_gnu4reU4Tkre-J2lV37b3I&t=2024-12-25T17%3A39%3A05.835Z",
+      "price": 1549000,
+      "stock": 11,
+      "createdAt": "2024-12-30T10:00:00Z",
+      "updatedAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "name": "Nike Air Max Command",
+      "id": "nike-air-max-command",
+      "description": "The Nike Air Max Command offers stability with plenty of cushioning. A mix of leather, textile and synthetic materials on the upper provide comfort, while a Waffle outsole gives you durable multi-surface traction.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/AIR+MAX+COMMAND-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL0FJUitNQVgrQ09NTUFORC1BLnBuZyIsImlhdCI6MTczNTE0ODY1MSwiZXhwIjoxNzM3NzQwNjUxfQ.Y4UHsu44uVTWirww8-dIeHFPBMCF3a1D6jtfJV9-dlc&t=2024-12-25T17%3A44%3A12.366Z",
+      "price": 1909000,
+      "stock": 19,
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 2017",
+      "id": "nike-air-max-2017",
+      "description": "The Nike Air Max 2017 delivers the plush sensation you love with a full-length Max Air unit.The upper is seamlessly constructed with zonal support and ventilation while moulded foam wraps your midfoot and heel for secure comfort.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+AIR+MAX+2017-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrQUlSK01BWCsyMDE3LUEucG5nIiwiaWF0IjoxNzM1MTQ4ODQ3LCJleHAiOjE3Mzc3NDA4NDd9.xIKIAz0glaVqJw-6LHqYyJWGvEx3w7lhnx9PxRisfLY&t=2024-12-25T17%3A47%3A28.297Z",
+      "price": 3169000,
+      "stock": 15,
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "name": "Nike Ebernon Low Premium",
+      "id": "nike-ebernon-low-premium",
+      "description": "Capturing the look and feel of '80s basketball style, the Ebernon features a sleek silhouette with durable traction. Stitched overlays echo the design of retro hoops models for unmistakable court style.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+EBERNON+LOW+PREM-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrRUJFUk5PTitMT1crUFJFTS1BLnBuZyIsImlhdCI6MTczNTE0OTA3NywiZXhwIjoxNzM3NzQxMDc3fQ.r3UDIUT4T-tiHlgWv-CCGJLDBDJyDlmQQEL444Istt8&t=2024-12-25T17%3A51%3A18.232Z",
+      "price": 1149000,
+      "stock": 21,
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "name": "Nike Flight Legacy",
+      "id": "nike-flight-legacy",
+      "description": "Inspired by basketball shoes from the late '80s, the Nike Flight Legacy updates a classic look for modern times. Lightweight cushioning and a full rubber outsole give you retro design details and modern comfort.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+FLIGHT+LEGACY-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrRkxJR0hUK0xFR0FDWS1BLnBuZyIsImlhdCI6MTczNTE0OTMzMywiZXhwIjoxNzM3NzQxMzMzfQ.7ni9yOYJvQ_4cHNoArRWhuALdsHOypbMvc5jOTZYP8E&t=2024-12-25T17%3A55%3A34.366Z",
+      "price": 1399000,
+      "stock": 4,
+      "createdAt": "2025-01-02T10:00:00Z",
+      "updatedAt": "2025-01-02T10:00:00Z"
+    },
+    {
+      "name": "Nike Revolution 6",
+      "id": "nike-revolution-6",
+      "description": "Here's to new beginnings between you and the pavement. Lace up the 100% recycled laces and set the pace at the start of your running journey with the plush feel of the Nike Revolution 6. We know comfort is key to a successful run, so we made sure your steps are cushioned and flexible for a soft ride. It's an evolution of a favourite, with a breathable design made with at least 20% recycled content by weight.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 799000,
+      "stock": 7,
+      "createdAt": "2025-01-02T10:00:00Z",
+      "updatedAt": "2025-01-02T10:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 270",
+      "id": "nike-air-max-270",
+      "description": "Feel the new era of air with the Nike Air Max 270, designed for ultimate comfort and style. The breathable mesh upper, responsive foam, and 270-degree visible Max Air unit provide unmatched cushioning for every step.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1290000,
+      "stock": 5,
+      "createdAt": "2024-11-01T12:00:00Z",
+      "updatedAt": "2024-11-01T12:00:00Z"
+    },
+    {
+      "name": "Nike Dri-FIT T-shirt",
+      "id": "nike-dri-fit-t-shirt",
+      "description": "The Nike Dri-FIT T-shirt is designed to keep you dry and comfortable during your workout or casual day. Made with sweat-wicking fabric, it provides a lightweight and breathable fit that moves with you.",
+      "categoryId": "1",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 399000,
+      "stock": 20,
+      "createdAt": "2024-12-05T13:00:00Z",
+      "updatedAt": "2024-12-05T13:00:00Z"
+    },
+    {
+      "name": "Nike Sportswear Pants",
+      "id": "nike-sportswear-pants",
+      "description": "These Nike Sportswear Pants are made for both style and comfort, whether you're lounging or out for a workout. Crafted from soft, flexible fabric, these pants ensure freedom of movement and durability.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 599000,
+      "stock": 12,
+      "createdAt": "2024-12-10T11:30:00Z",
+      "updatedAt": "2024-12-10T11:30:00Z"
+    },
+    {
+      "name": "Nike Training Hoodie",
+      "id": "nike-training-hoodie",
+      "description": "The Nike Training Hoodie offers the perfect blend of warmth and performance. Designed with soft fleece fabric and an adjustable hood, this hoodie ensures comfort throughout your workout and beyond.",
+      "categoryId": "4",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 899000,
+      "stock": 8,
+      "createdAt": "2024-12-15T16:00:00Z",
+      "updatedAt": "2024-12-15T16:00:00Z"
+    },
+    {
+      "name": "Nike Pro Compression Shorts",
+      "id": "nike-pro-compression-shorts",
+      "description": "Nike Pro Compression Shorts offer a snug fit for performance training. The stretchy, sweat-wicking fabric provides support and freedom of movement, keeping you comfortable during your most intense workouts.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 499000,
+      "stock": 15,
+      "createdAt": "2024-12-20T17:00:00Z",
+      "updatedAt": "2024-12-20T17:00:00Z"
+    },
+    {
+      "name": "Nike Flex Run 2024",
+      "id": "nike-flex-run-2024",
+      "description": "Hit the road in the Nike Flex Run 2024. These lightweight running shoes provide stability, breathability, and the perfect amount of cushioning for every mile.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1100000,
+      "stock": 7,
+      "createdAt": "2024-11-25T14:00:00Z",
+      "updatedAt": "2024-11-25T14:00:00Z"
+    },
+    {
+      "name": "Nike Victory Sports Bra",
+      "id": "nike-victory-sports-bra",
+      "description": "The Nike Victory Sports Bra combines support with breathability, designed for high-impact workouts. Stay comfortable and supported, no matter your activity level.",
+      "categoryId": "1",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 499000,
+      "stock": 18,
+      "createdAt": "2024-12-10T14:00:00Z",
+      "updatedAt": "2024-12-10T14:00:00Z"
+    },
+    {
+      "name": "Nike SB Dunk Low",
+      "id": "nike-sb-dunk-low",
+      "description": "Step up your sneaker game with the Nike SB Dunk Low. Known for its style and comfort, this sneaker provides superior cushioning and a sleek, timeless look.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1490000,
+      "stock": 3,
+      "createdAt": "2024-11-30T17:00:00Z",
+      "updatedAt": "2024-11-30T17:00:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Pegasus 39",
+      "id": "nike-air-zoom-pegasus-39",
+      "description": "Run in comfort with the Nike Air Zoom Pegasus 39. This running shoe offers a soft, supportive ride and responsive cushioning, perfect for runners at every level.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1400000,
+      "stock": 10,
+      "createdAt": "2024-12-20T18:00:00Z",
+      "updatedAt": "2024-12-20T18:00:00Z"
+    },
+    {
+      "name": "Nike Essential Tank Top",
+      "id": "nike-essential-tank-top",
+      "description": "The Nike Essential Tank Top offers a lightweight and breathable fit for all your workouts. The simple design and versatile use make it a must-have in any active wardrobe.",
+      "categoryId": "1",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 449000,
+      "stock": 25,
+      "createdAt": "2024-12-12T17:30:00Z",
+      "updatedAt": "2024-12-12T17:30:00Z"
+    },
+    {
+      "name": "Nike Alpha Training Gloves",
+      "id": "nike-alpha-training-gloves",
+      "description": "Get a grip with the Nike Alpha Training Gloves. Designed for weightlifting and general training, these gloves offer durable protection and enhanced grip to help you lift with confidence.",
+      "categoryId": "4",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+REVOLUTION+6+NN-A.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 299000,
+      "stock": 9,
+      "createdAt": "2024-12-22T12:00:00Z",
+      "updatedAt": "2024-12-22T12:00:00Z"
+    },
+    {
+      "name": "Nike Air Force 1",
+      "id": "nike-air-force-1",
+      "description": "The Nike Air Force 1 is a timeless icon in the sneaker world. Combining durable leather and a cushioned sole, this classic design is perfect for both casual and athletic wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/NIKE+AIR+FORCE+1.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 999000,
+      "stock": 10,
+      "createdAt": "2024-12-26T16:00:00Z",
+      "updatedAt": "2024-12-26T16:00:00Z"
+    },
+    {
+      "name": "Nike Court Vision Low",
+      "id": "nike-court-vision-low",
+      "description": "Inspired by classic basketball style, the Nike Court Vision Low offers premium leather for a stylish, durable look. Its minimalist design ensures comfort on and off the court.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Court_Vision_Low.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 799000,
+      "stock": 5,
+      "createdAt": "2024-12-27T13:30:00Z",
+      "updatedAt": "2024-12-27T13:30:00Z"
+    },
+    {
+      "name": "Nike React Infinity Run Flyknit",
+      "id": "nike-react-infinity-run-flyknit",
+      "description": "Designed for long-distance runners, the Nike React Infinity Run Flyknit features soft, responsive cushioning and a breathable Flyknit upper, making every mile feel effortless.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_React_Flyknit.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1600000,
+      "stock": 7,
+      "createdAt": "2024-12-29T12:00:00Z",
+      "updatedAt": "2024-12-29T12:00:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Structure 25",
+      "id": "nike-air-zoom-structure-25",
+      "description": "The Nike Air Zoom Structure 25 delivers stability and cushioning with its Zoom Air technology. Designed for stability runners, it offers a smooth and responsive ride with every stride.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Zoom_Structure.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1350000,
+      "stock": 9,
+      "createdAt": "2024-12-29T14:00:00Z",
+      "updatedAt": "2024-12-29T14:00:00Z"
+    },
+    {
+      "name": "Nike Elite Basketball Shorts",
+      "id": "nike-elite-basketball-shorts",
+      "description": "Play in style and comfort with the Nike Elite Basketball Shorts. These shorts are crafted from lightweight fabric that moves with you, ensuring optimal performance on the court.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Elite_Basketball_Shorts.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 749000,
+      "stock": 10,
+      "createdAt": "2024-12-28T11:00:00Z",
+      "updatedAt": "2024-12-28T11:00:00Z"
+    },
+    {
+      "name": "Nike Flyknit Trainer",
+      "id": "nike-flyknit-trainer",
+      "description": "The Nike Flyknit Trainer offers a lightweight, breathable upper for a sock-like fit. With a responsive sole and superior cushioning, it's built for both performance and casual wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Flyknit_Trainer.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1200000,
+      "stock": 6,
+      "createdAt": "2024-12-28T12:00:00Z",
+      "updatedAt": "2024-12-28T12:00:00Z"
+    },
+    {
+      "name": "Nike Tech Fleece Jogger Pants",
+      "id": "nike-tech-fleece-jogger-pants",
+      "description": "The Nike Tech Fleece Jogger Pants are made for comfort and warmth with soft fleece fabric. These joggers are perfect for your casual wear or post-workout relaxation.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Tech_Fleece_Jogger.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 999000,
+      "stock": 15,
+      "createdAt": "2024-12-29T14:00:00Z",
+      "updatedAt": "2024-12-29T14:00:00Z"
+    },
+    {
+      "name": "Nike Tech Fleece Gloves",
+      "id": "nike-tech-fleece-gloves",
+      "description": "Keep your hands warm with the Nike Tech Fleece Gloves, made with soft fleece for warmth and comfort during colder months.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Tech_Fleece_Gloves.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 499000,
+      "stock": 12,
+      "createdAt": "2024-11-21T09:00:00Z",
+      "updatedAt": "2024-11-21T09:00:00Z"
+    },
+    {
+      "name": "Nike Sport Headband",
+      "id": "nike-sport-headband",
+      "description": "The Nike Sport Headband helps keep sweat out of your eyes and hair out of your face, designed for comfort during any sport or workout.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Sport_Headband.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 149000,
+      "stock": 20,
+      "createdAt": "2024-11-25T10:30:00Z",
+      "updatedAt": "2024-11-25T10:30:00Z"
+    },
+    {
+      "name": "Nike Training Socks (3 Pack)",
+      "id": "nike-training-socks-3-pack",
+      "description": "Made for comfort and performance, the Nike Training Socks are designed to keep your feet cool and dry during intense training sessions.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Training_Socks.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 299000,
+      "stock": 50,
+      "createdAt": "2024-12-02T15:45:00Z",
+      "updatedAt": "2024-12-02T15:45:00Z"
+    },
+    {
+      "name": "Nike Dri-FIT Cap",
+      "id": "nike-dri-fit-cap",
+      "description": "The Nike Dri-FIT Cap keeps the sun out of your eyes and helps manage sweat with its moisture-wicking fabric, perfect for outdoor activities.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Dri_FIT_Cap.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 399000,
+      "stock": 15,
+      "createdAt": "2024-12-05T13:00:00Z",
+      "updatedAt": "2024-12-05T13:00:00Z"
+    },
+    {
+      "name": "Nike Training Bag",
+      "id": "nike-training-bag",
+      "description": "The Nike Training Bag is built for durability and spacious storage, perfect for carrying all your training gear in one bag.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Training_Bag.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 799000,
+      "stock": 10,
+      "createdAt": "2024-12-10T11:15:00Z",
+      "updatedAt": "2024-12-10T11:15:00Z"
+    },
+    {
+      "name": "Nike Fitness Tracker",
+      "id": "nike-fitness-tracker",
+      "description": "Track your workouts and monitor your health with the Nike Fitness Tracker, designed to sync with your mobile device for easy tracking of your progress.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Fitness_Tracker.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1199000,
+      "stock": 5,
+      "createdAt": "2024-12-12T16:00:00Z",
+      "updatedAt": "2024-12-12T16:00:00Z"
+    },
+    {
+      "name": "Nike Sport Water Bottle",
+      "id": "nike-sport-water-bottle",
+      "description": "Stay hydrated during your workouts with the Nike Sport Water Bottle, designed with a secure lid and easy-grip surface for on-the-go hydration.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Sport_Water_Bottle.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 199000,
+      "stock": 25,
+      "createdAt": "2024-12-15T17:30:00Z",
+      "updatedAt": "2024-12-15T17:30:00Z"
+    },
+    {
+      "name": "Nike Sports Watch",
+      "id": "nike-sports-watch",
+      "description": "Stay on track with the Nike Sports Watch, designed to keep you in tune with your health metrics during your training.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Sports_Watch.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1599000,
+      "stock": 8,
+      "createdAt": "2024-12-18T10:00:00Z",
+      "updatedAt": "2024-12-18T10:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 270",
+      "id": "nike-air-max-270",
+      "description": "The Nike Air Max 270 brings you a fresh new look with a plush and cushioned feel that’s perfect for all-day wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Max_270.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1799000,
+      "stock": 30,
+      "createdAt": "2024-10-15T08:30:00Z",
+      "updatedAt": "2024-10-15T08:30:00Z"
+    },
+    {
+      "name": "Nike Dry-FIT Training Shirt",
+      "id": "nike-dry-fit-training-shirt",
+      "description": "The Nike Dry-FIT Training Shirt keeps you cool and dry, so you can focus on your workout without distractions.",
+      "categoryId": "1",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Dry_FIT_Training_Shirt.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 349000,
+      "stock": 50,
+      "createdAt": "2024-11-10T14:00:00Z",
+      "updatedAt": "2024-11-10T14:00:00Z"
+    },
+    {
+      "name": "Nike Flex Training Pants",
+      "id": "nike-flex-training-pants",
+      "description": "The Nike Flex Training Pants are designed with a flexible waistband for a snug fit, allowing you to move freely during any workout.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Flex_Training_Pants.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 649000,
+      "stock": 40,
+      "createdAt": "2024-12-03T10:00:00Z",
+      "updatedAt": "2024-12-03T10:00:00Z"
+    },
+    {
+      "name": "Nike SB Dunk High",
+      "id": "nike-sb-dunk-high",
+      "description": "Step up your sneaker game with the iconic Nike SB Dunk High, featuring a durable and stylish design perfect for skateboarding and everyday wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_SB_Dunk_High.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2299000,
+      "stock": 25,
+      "createdAt": "2024-10-25T15:00:00Z",
+      "updatedAt": "2024-10-25T15:00:00Z"
+    },
+    {
+      "name": "Nike Sportswear Hoodie",
+      "id": "nike-sportswear-hoodie",
+      "description": "This hoodie from Nike Sportswear is made with soft fabric to keep you warm, perfect for layering or wearing during cooler months.",
+      "categoryId": "4",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Sportswear_Hoodie.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 899000,
+      "stock": 18,
+      "createdAt": "2024-11-05T17:30:00Z",
+      "updatedAt": "2024-11-05T17:30:00Z"
+    },
+    {
+      "name": "Nike Elite Socks (3 Pack)",
+      "id": "nike-elite-socks-3-pack",
+      "description": "The Nike Elite Socks offer a cushioned feel and a secure fit for every type of sport or casual use, perfect for athletes and everyday wear.",
+      "categoryId": "5",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Elite_Socks.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 299000,
+      "stock": 35,
+      "createdAt": "2024-11-20T08:00:00Z",
+      "updatedAt": "2024-11-20T08:00:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Pegasus 39",
+      "id": "nike-air-zoom-pegasus-39",
+      "description": "The Nike Air Zoom Pegasus 39 combines style and performance, providing the comfort and durability you need for all types of runs.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Zoom_Pegasus_39.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2099000,
+      "stock": 22,
+      "createdAt": "2024-12-05T11:30:00Z",
+      "updatedAt": "2024-12-05T11:30:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Alphafly Next%",
+      "id": "nike-air-zoom-alphafly-next",
+      "description": "Designed for marathon runners, the Nike Air Zoom Alphafly Next% delivers responsive cushioning and a lightweight feel to boost your performance.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Zoom_Alphafly_Next.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2899000,
+      "stock": 18,
+      "createdAt": "2024-11-30T10:00:00Z",
+      "updatedAt": "2024-11-30T10:00:00Z"
+    },
+    {
+      "name": "Nike Therma-FIT Jacket",
+      "id": "nike-therma-fit-jacket",
+      "description": "Keep warm during colder days with the Nike Therma-FIT Jacket, designed for ultimate comfort and protection against the cold.",
+      "categoryId": "4",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Therma_FIT_Jacket.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1299000,
+      "stock": 20,
+      "createdAt": "2024-10-18T09:00:00Z",
+      "updatedAt": "2024-10-18T09:00:00Z"
+    },
+    {
+      "name": "Nike Pro Compression Shorts",
+      "id": "nike-pro-compression-shorts",
+      "description": "Experience comfort and support with the Nike Pro Compression Shorts, perfect for any athletic activity and intense workouts.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Pro_Compression_Shorts.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 499000,
+      "stock": 40,
+      "createdAt": "2024-12-02T12:00:00Z",
+      "updatedAt": "2024-12-02T12:00:00Z"
+    },
+    {
+      "name": "Nike AeroSwift Running Shorts",
+      "id": "nike-aeroswift-running-shorts",
+      "description": "Stay cool and comfortable during your run with the Nike AeroSwift Running Shorts, designed for maximum breathability and flexibility.",
+      "categoryId": "2",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_AeroSwift_Running_Shorts.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 749000,
+      "stock": 22,
+      "createdAt": "2024-11-12T13:00:00Z",
+      "updatedAt": "2024-11-12T13:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 90",
+      "id": "nike-air-max-90",
+      "description": "Classic and sleek, the Nike Air Max 90 offers a stylish design with maximum comfort and support for everyday wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Max_90.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2099000,
+      "stock": 35,
+      "createdAt": "2024-11-18T09:30:00Z",
+      "updatedAt": "2024-11-18T09:30:00Z"
+    },
+    {
+      "name": "Nike ZoomX Vaporfly Next%",
+      "id": "nike-zoomx-vaporfly-next",
+      "description": "The Nike ZoomX Vaporfly Next% is designed for elite runners, offering ultimate energy return with every step for faster speeds.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_ZoomX_Vaporfly_Next.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 3499000,
+      "stock": 18,
+      "createdAt": "2024-11-22T10:00:00Z",
+      "updatedAt": "2024-11-22T10:00:00Z"
+    },
+    {
+      "name": "Nike Court Vision Low",
+      "id": "nike-court-vision-low",
+      "description": "With a retro-inspired design, the Nike Court Vision Low brings a bold, stylish look to everyday sneakers.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Court_Vision_Low.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1599000,
+      "stock": 40,
+      "createdAt": "2024-11-17T12:00:00Z",
+      "updatedAt": "2024-11-17T12:00:00Z"
+    },
+    {
+      "name": "Nike Air Force 1 Shadow",
+      "id": "nike-air-force-1-shadow",
+      "description": "The Nike Air Force 1 Shadow features bold color blocking and a chunky silhouette that stands out with each step.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Force_1_Shadow.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2399000,
+      "stock": 28,
+      "createdAt": "2024-10-30T14:00:00Z",
+      "updatedAt": "2024-10-30T14:00:00Z"
+    },
+    {
+      "name": "Nike Free Run 5.0",
+      "id": "nike-free-run-5-0",
+      "description": "For all-around comfort, the Nike Free Run 5.0 combines flexibility and lightness to enhance your running experience.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Free_Run_5_0.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1899000,
+      "stock": 33,
+      "createdAt": "2024-11-15T08:00:00Z",
+      "updatedAt": "2024-11-15T08:00:00Z"
+    },
+    {
+      "name": "Nike VaporMax 2023",
+      "id": "nike-vapormax-2023",
+      "description": "The Nike VaporMax 2023 delivers ultra-lightweight cushioning with every step, making it ideal for runners and sneaker enthusiasts.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_VaporMax_2023.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2999000,
+      "stock": 25,
+      "createdAt": "2024-11-12T13:30:00Z",
+      "updatedAt": "2024-11-12T13:30:00Z"
+    },
+    {
+      "name": "Nike Air Max 97 Ultra",
+      "id": "nike-air-max-97-ultra",
+      "description": "The Nike Air Max 97 Ultra brings the best of both worlds with its iconic design and advanced cushioning technology for all-day comfort.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Max_97_Ultra.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2599000,
+      "stock": 20,
+      "createdAt": "2024-11-01T11:30:00Z",
+      "updatedAt": "2024-11-01T11:30:00Z"
+    },
+    {
+      "name": "Nike Air Max Infinity",
+      "id": "nike-air-max-infinity",
+      "description": "Bold, comfortable, and stylish, the Nike Air Max Infinity delivers a unique design with cushioning support for all-day wear.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Max_Infinity.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2199000,
+      "stock": 30,
+      "createdAt": "2024-10-28T14:00:00Z",
+      "updatedAt": "2024-10-28T14:00:00Z"
+    },
+    {
+      "name": "Nike React Infinity Run Flyknit",
+      "id": "nike-react-infinity-run-flyknit",
+      "description": "Built for durability and comfort, the Nike React Infinity Run Flyknit offers smooth, responsive cushioning to enhance your runs.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_React_Infinity_Run_Flyknit.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2799000,
+      "stock": 27,
+      "createdAt": "2024-11-05T11:45:00Z",
+      "updatedAt": "2024-11-05T11:45:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Pegasus 40",
+      "id": "nike-air-zoom-pegasus-40",
+      "description": "Designed for runners, the Nike Air Zoom Pegasus 40 provides responsive cushioning with excellent support to help you go the distance.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Zoom_Pegasus_40.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 2199000,
+      "stock": 20,
+      "createdAt": "2024-11-09T10:15:00Z",
+      "updatedAt": "2024-11-09T10:15:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Winflo 11",
+      "id": "nike-air-zoom-winflo-11",
+      "description": "A versatile running shoe, the Nike Air Zoom Winflo 11 provides comfort and cushioning to keep you moving.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Air_Zoom_Winflo_11.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1799000,
+      "stock": 25,
+      "createdAt": "2024-10-20T12:00:00Z",
+      "updatedAt": "2024-10-20T12:00:00Z"
+    },
+    {
+      "name": "Nike Revolution 6 Next Nature",
+      "id": "nike-revolution-6-next-nature",
+      "description": "Eco-friendly and durable, the Nike Revolution 6 Next Nature is designed for the environmentally-conscious runner with great comfort.",
+      "categoryId": "3",
+      "image": "https://gtzyhzmsbukqrxnztxjc.supabase.co/storage/v1/object/sign/naik-shoes/Nike_Revolution_6_Next_Nature.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJuYWlrLXNob2VzL05JS0UrUkVWT0xVVElPTis2K05OLUEucG5nIiwiaWF0IjoxNzM1MTQ5NTkzLCJleHAiOjE3Mzc3NDE1OTN9.xutiduDC07l4ySfNtBZ3Y7l4_x_H6XFIKDr0rpe-nO8&t=2024-12-25T17%3A59%3A54.393Z",
+      "price": 1699000,
+      "stock": 38,
+      "createdAt": "2024-10-16T11:30:00Z",
+      "updatedAt": "2024-10-16T11:30:00Z"
+    },
+    {
+      "name": "Adidas Ultraboost 22",
+      "id": "adidas-ultraboost-22",
+      "description": "The Adidas Ultraboost 22 offers plush cushioning and responsive energy return for all-day comfort.",
+      "categoryId": "3",
+      "image": "https://example.com/ultraboost22.png",
+      "price": 2200000,
+      "stock": 40,
+      "createdAt": "2024-12-01T08:00:00Z",
+      "updatedAt": "2024-12-01T08:00:00Z"
+    },
+    {
+      "name": "Puma RS-X3",
+      "id": "puma-rs-x3",
+      "description": "Stylish and modern, the Puma RS-X3 offers comfort and a bold design for everyday wear.",
+      "categoryId": "3",
+      "image": "https://example.com/rsx3.png",
+      "price": 1800000,
+      "stock": 50,
+      "createdAt": "2024-12-02T09:00:00Z",
+      "updatedAt": "2024-12-02T09:00:00Z"
+    },
+    {
+      "name": "Reebok Nano X2",
+      "id": "reebok-nano-x2",
+      "description": "The Reebok Nano X2 is built for high-intensity workouts, offering stability and durability.",
+      "categoryId": "3",
+      "image": "https://example.com/nano-x2.png",
+      "price": 1999000,
+      "stock": 30,
+      "createdAt": "2024-12-03T10:30:00Z",
+      "updatedAt": "2024-12-03T10:30:00Z"
+    },
+    {
+      "name": "New Balance 990v5",
+      "id": "new-balance-990v5",
+      "description": "Classic and comfortable, the New Balance 990v5 features premium materials for everyday style.",
+      "categoryId": "3",
+      "image": "https://example.com/990v5.png",
+      "price": 2500000,
+      "stock": 60,
+      "createdAt": "2024-12-04T11:00:00Z",
+      "updatedAt": "2024-12-04T11:00:00Z"
+    },
+    {
+      "name": "Under Armour HOVR Phantom 2",
+      "id": "under-armour-hovr-phantom-2",
+      "description": "The Under Armour HOVR Phantom 2 offers a blend of comfort and performance for athletes on the go.",
+      "categoryId": "3",
+      "image": "https://example.com/hovr-phantom2.png",
+      "price": 2100000,
+      "stock": 55,
+      "createdAt": "2024-12-05T12:30:00Z",
+      "updatedAt": "2024-12-05T12:30:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Pegasus 39",
+      "id": "nike-air-zoom-pegasus-39",
+      "description": "The Nike Air Zoom Pegasus 39 is designed for runners seeking comfort, support, and responsive cushioning.",
+      "categoryId": "3",
+      "image": "https://example.com/pegasus-39.png",
+      "price": 2300000,
+      "stock": 45,
+      "createdAt": "2024-12-06T13:00:00Z",
+      "updatedAt": "2024-12-06T13:00:00Z"
+    },
+    {
+      "name": "Adidas Solarboost 4",
+      "id": "adidas-solarboost-4",
+      "description": "The Adidas Solarboost 4 offers exceptional support and energy return for long runs.",
+      "categoryId": "3",
+      "image": "https://example.com/solarboost-4.png",
+      "price": 2500000,
+      "stock": 50,
+      "createdAt": "2024-12-07T14:30:00Z",
+      "updatedAt": "2024-12-07T14:30:00Z"
+    },
+    {
+      "name": "Asics Gel-Kayano 28",
+      "id": "asics-gel-kayano-28",
+      "description": "The Asics Gel-Kayano 28 combines stability and cushioning for a supportive running experience.",
+      "categoryId": "3",
+      "image": "https://example.com/gel-kayano-28.png",
+      "price": 2400000,
+      "stock": 35,
+      "createdAt": "2024-12-08T15:00:00Z",
+      "updatedAt": "2024-12-08T15:00:00Z"
+    },
+    {
+      "name": "Brooks Ghost 15",
+      "id": "brooks-ghost-15",
+      "description": "Lightweight and comfortable, the Brooks Ghost 15 is perfect for long-distance runners.",
+      "categoryId": "3",
+      "image": "https://example.com/ghost-15.png",
+      "price": 2200000,
+      "stock": 40,
+      "createdAt": "2024-12-09T16:00:00Z",
+      "updatedAt": "2024-12-09T16:00:00Z"
+    },
+    {
+      "name": "Saucony Endorphin Pro 3",
+      "id": "saucony-endorphin-pro-3",
+      "description": "The Saucony Endorphin Pro 3 offers speed and performance, with responsive cushioning for faster runs.",
+      "categoryId": "3",
+      "image": "https://example.com/endorphin-pro-3.png",
+      "price": 2700000,
+      "stock": 20,
+      "createdAt": "2024-12-10T17:30:00Z",
+      "updatedAt": "2024-12-10T17:30:00Z"
+    },
+    {
+      "name": "Nike React Infinity Run Flyknit",
+      "id": "nike-react-infinity-run-flyknit",
+      "description": "The Nike React Infinity Run Flyknit is built for cushioning and support, ideal for runners seeking comfort over long distances.",
+      "categoryId": "3",
+      "image": "https://example.com/react-infinity-run.png",
+      "price": 2600000,
+      "stock": 40,
+      "createdAt": "2024-12-11T18:00:00Z",
+      "updatedAt": "2024-12-11T18:00:00Z"
+    },
+    {
+      "name": "New Balance Fresh Foam 1080v11",
+      "id": "new-balance-fresh-foam-1080v11",
+      "description": "With a plush ride and premium cushioning, the New Balance Fresh Foam 1080v11 provides comfort for long runs.",
+      "categoryId": "3",
+      "image": "https://example.com/fresh-foam-1080v11.png",
+      "price": 2450000,
+      "stock": 25,
+      "createdAt": "2024-12-12T19:00:00Z",
+      "updatedAt": "2024-12-12T19:00:00Z"
+    },
+    {
+      "name": "Hoka One One Clifton 8",
+      "id": "hoka-one-one-clifton-8",
+      "description": "The Hoka One One Clifton 8 delivers lightweight cushioning and an ultra-comfortable ride for long-distance runners.",
+      "categoryId": "3",
+      "image": "https://example.com/clifton-8.png",
+      "price": 2600000,
+      "stock": 60,
+      "createdAt": "2024-12-13T20:00:00Z",
+      "updatedAt": "2024-12-13T20:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 97",
+      "id": "nike-air-max-97",
+      "description": "The iconic Nike Air Max 97 features a sleek, modern design with full-length cushioning for comfort.",
+      "categoryId": "3",
+      "image": "https://example.com/air-max-97.png",
+      "price": 2300000,
+      "stock": 50,
+      "createdAt": "2024-12-14T21:00:00Z",
+      "updatedAt": "2024-12-14T21:00:00Z"
+    },
+    {
+      "name": "Adidas NMD_R1",
+      "id": "adidas-nmd-r1",
+      "description": "The Adidas NMD_R1 combines streetwear style and ultra-lightweight cushioning for an on-the-go look.",
+      "categoryId": "3",
+      "image": "https://example.com/nmd-r1.png",
+      "price": 2100000,
+      "stock": 30,
+      "createdAt": "2024-12-15T22:00:00Z",
+      "updatedAt": "2024-12-15T22:00:00Z"
+    },
+    {
+      "name": "Nike Zoom Fly 4",
+      "id": "nike-zoom-fly-4",
+      "description": "The Nike Zoom Fly 4 is built for speed, offering lightweight performance and a responsive fit.",
+      "categoryId": "3",
+      "image": "https://example.com/zoom-fly-4.png",
+      "price": 2800000,
+      "stock": 35,
+      "createdAt": "2024-12-16T23:00:00Z",
+      "updatedAt": "2024-12-16T23:00:00Z"
+    },
+    {
+      "name": "Brooks Adrenaline GTS 22",
+      "id": "brooks-adrenaline-gts-22",
+      "description": "The Brooks Adrenaline GTS 22 is designed for runners who need support and cushioning.",
+      "categoryId": "3",
+      "image": "https://example.com/adrenaline-gts-22.png",
+      "price": 2100000,
+      "stock": 60,
+      "createdAt": "2024-12-17T00:00:00Z",
+      "updatedAt": "2024-12-17T00:00:00Z"
+    },
+    {
+      "name": "Asics GT-2000 10",
+      "id": "asics-gt-2000-10",
+      "description": "The Asics GT-2000 10 provides a perfect blend of cushioning and support for moderate overpronation.",
+      "categoryId": "3",
+      "image": "https://example.com/gt-2000-10.png",
+      "price": 2300000,
+      "stock": 40,
+      "createdAt": "2024-12-18T01:00:00Z",
+      "updatedAt": "2024-12-18T01:00:00Z"
+    },
+    {
+      "name": "Puma Deviate Nitro",
+      "id": "puma-deviate-nitro",
+      "description": "Built for speed, the Puma Deviate Nitro is equipped with advanced cushioning for high-performance runs.",
+      "categoryId": "3",
+      "image": "https://example.com/deviate-nitro.png",
+      "price": 2350000,
+      "stock": 50,
+      "createdAt": "2024-12-19T02:00:00Z",
+      "updatedAt": "2024-12-19T02:00:00Z"
+    },
+    {
+      "name": "Nike Free RN 5.0",
+      "id": "nike-free-rn-5.0",
+      "description": "The Nike Free RN 5.0 is designed for natural movement and flexibility with lightweight cushioning for daily runs.",
+      "categoryId": "3",
+      "image": "https://example.com/free-rn-5.0.png",
+      "price": 1800000,
+      "stock": 45,
+      "createdAt": "2024-12-20T10:00:00Z",
+      "updatedAt": "2024-12-20T10:00:00Z"
+    },
+    {
+      "name": "Adidas Adizero Adios Pro 3",
+      "id": "adidas-adizero-adios-pro-3",
+      "description": "The Adidas Adizero Adios Pro 3 is a lightweight and responsive marathon shoe for speed and agility.",
+      "categoryId": "3",
+      "image": "https://example.com/adizero-adios-pro-3.png",
+      "price": 2900000,
+      "stock": 30,
+      "createdAt": "2024-12-21T11:30:00Z",
+      "updatedAt": "2024-12-21T11:30:00Z"
+    },
+    {
+      "name": "Reebok Floatride Energy 3.0",
+      "id": "reebok-floatride-energy-3.0",
+      "description": "The Reebok Floatride Energy 3.0 offers soft cushioning and energy return for a smooth and responsive run.",
+      "categoryId": "3",
+      "image": "https://example.com/floatride-energy-3.0.png",
+      "price": 2000000,
+      "stock": 50,
+      "createdAt": "2024-12-22T12:15:00Z",
+      "updatedAt": "2024-12-22T12:15:00Z"
+    },
+    {
+      "name": "Puma Future Rider",
+      "id": "puma-future-rider",
+      "description": "The Puma Future Rider combines a retro look with modern technology for a comfortable, stylish sneaker.",
+      "categoryId": "3",
+      "image": "https://example.com/future-rider.png",
+      "price": 1700000,
+      "stock": 40,
+      "createdAt": "2024-12-23T13:00:00Z",
+      "updatedAt": "2024-12-23T13:00:00Z"
+    },
+    {
+      "name": "Saucony Triumph 19",
+      "id": "saucony-triumph-19",
+      "description": "The Saucony Triumph 19 offers a plush ride with premium cushioning for a smooth and comfortable experience.",
+      "categoryId": "3",
+      "image": "https://example.com/triumph-19.png",
+      "price": 2600000,
+      "stock": 35,
+      "createdAt": "2024-12-24T14:30:00Z",
+      "updatedAt": "2024-12-24T14:30:00Z"
+    },
+    {
+      "name": "Brooks Glycerin 19",
+      "id": "brooks-glycerin-19",
+      "description": "The Brooks Glycerin 19 is built for soft cushioning and smooth transitions, providing comfort for long-distance runs.",
+      "categoryId": "3",
+      "image": "https://example.com/glycerin-19.png",
+      "price": 2300000,
+      "stock": 40,
+      "createdAt": "2024-12-25T15:00:00Z",
+      "updatedAt": "2024-12-25T15:00:00Z"
+    },
+    {
+      "name": "Nike Air Zoom Alphafly Next%",
+      "id": "nike-air-zoom-alphafly-next",
+      "description": "The Nike Air Zoom Alphafly Next% is built for marathon runners, offering lightweight performance and superior energy return.",
+      "categoryId": "3",
+      "image": "https://example.com/air-zoom-alphafly-next.png",
+      "price": 3200000,
+      "stock": 25,
+      "createdAt": "2024-12-26T16:00:00Z",
+      "updatedAt": "2024-12-26T16:00:00Z"
+    },
+    {
+      "name": "Adidas Terrex Free Hiker 2",
+      "id": "adidas-terrex-free-hiker-2",
+      "description": "The Adidas Terrex Free Hiker 2 is a hiking shoe designed for stability and comfort on rugged terrain.",
+      "categoryId": "3",
+      "image": "https://example.com/terrex-free-hiker-2.png",
+      "price": 2700000,
+      "stock": 30,
+      "createdAt": "2024-12-27T17:00:00Z",
+      "updatedAt": "2024-12-27T17:00:00Z"
+    },
+    {
+      "name": "Hoka One One Speedgoat 5",
+      "id": "hoka-one-one-speedgoat-5",
+      "description": "The Hoka One One Speedgoat 5 is built for trail running, offering aggressive traction and cushioning for off-road adventures.",
+      "categoryId": "3",
+      "image": "https://example.com/speedgoat-5.png",
+      "price": 2800000,
+      "stock": 20,
+      "createdAt": "2024-12-28T18:00:00Z",
+      "updatedAt": "2024-12-28T18:00:00Z"
+    },
+    {
+      "name": "Asics Nimbus 24",
+      "id": "asics-nimbus-24",
+      "description": "The Asics Nimbus 24 provides maximum cushioning and support, perfect for long-distance runners.",
+      "categoryId": "3",
+      "image": "https://example.com/nimbus-24.png",
+      "price": 2900000,
+      "stock": 50,
+      "createdAt": "2024-12-29T19:00:00Z",
+      "updatedAt": "2024-12-29T19:00:00Z"
+    },
+    {
+      "name": "Nike Air Max 270 React",
+      "id": "nike-air-max-270-react",
+      "description": "The Nike Air Max 270 React combines the classic Air Max look with a modern, responsive ride for everyday wear.",
+      "categoryId": "3",
+      "image": "https://example.com/air-max-270-react.png",
+      "price": 2400000,
+      "stock": 60,
+      "createdAt": "2024-12-30T20:00:00Z",
+      "updatedAt": "2024-12-30T20:00:00Z"
+    },
+    {
+      "name": "New Balance 1080v11",
+      "id": "new-balance-1080v11",
+      "description": "The New Balance 1080v11 offers plush cushioning and comfort, perfect for long runs and daily wear.",
+      "categoryId": "3",
+      "image": "https://example.com/1080v11.png",
+      "price": 2500000,
+      "stock": 35,
+      "createdAt": "2024-12-31T21:30:00Z",
+      "updatedAt": "2024-12-31T21:30:00Z"
+    },
+    {
+      "name": "Under Armour Project Rock 3",
+      "id": "under-armour-project-rock-3",
+      "description": "The Under Armour Project Rock 3 features superior stability and durability for intense workouts.",
+      "categoryId": "3",
+      "image": "https://example.com/project-rock-3.png",
+      "price": 2000000,
+      "stock": 45,
+      "createdAt": "2025-01-01T08:30:00Z",
+      "updatedAt": "2025-01-01T08:30:00Z"
+    },
+    {
+      "name": "Adidas Forum Low",
+      "id": "adidas-forum-low",
+      "description": "The Adidas Forum Low offers a stylish and retro-inspired look with modern comfort and durability.",
+      "categoryId": "3",
+      "image": "https://example.com/forum-low.png",
+      "price": 1800000,
+      "stock": 40,
+      "createdAt": "2025-01-02T09:00:00Z",
+      "updatedAt": "2025-01-02T09:00:00Z"
+    },
+    {
+      "name": "Puma Clyde All Pro",
+      "id": "puma-clyde-all-pro",
+      "description": "The Puma Clyde All Pro delivers premium court-inspired design with responsive cushioning for all-day wear.",
+      "categoryId": "3",
+      "image": "https://example.com/clyde-all-pro.png",
+      "price": 2100000,
+      "stock": 30,
+      "createdAt": "2025-01-03T10:30:00Z",
+      "updatedAt": "2025-01-03T10:30:00Z"
+    },
+    {
+      "name": "Reebok Zig Kinetica 2.5",
+      "id": "reebok-zig-kinetica-2.5",
+      "description": "The Reebok Zig Kinetica 2.5 features a futuristic design with a responsive ZigTech sole for ultimate comfort.",
+      "categoryId": "3",
+      "image": "https://example.com/zig-kinetica-2.5.png",
+      "price": 2200000,
+      "stock": 50,
+      "createdAt": "2025-01-04T11:00:00Z",
+      "updatedAt": "2025-01-04T11:00:00Z"
+    },
+    {
+      "name": "Nike Blazer Mid '77 Vintage",
+      "id": "nike-blazer-mid-77-vintage",
+      "description": "The Nike Blazer Mid '77 Vintage offers a classic look with premium leather and a cushioned midsole for comfort.",
+      "categoryId": "3",
+      "image": "https://example.com/blazer-mid-77.png",
+      "price": 1800000,
+      "stock": 40,
+      "createdAt": "2025-01-05T12:00:00Z",
+      "updatedAt": "2025-01-05T12:00:00Z"
+    },
+    {
+      "name": "Adidas Superstar 2.0",
+      "id": "adidas-superstar-2.0",
+      "description": "The Adidas Superstar 2.0 is an iconic sneaker with a timeless design and superior comfort.",
+      "categoryId": "3",
+      "image": "https://example.com/superstar-2.0.png",
+      "price": 1700000,
+      "stock": 50,
+      "createdAt": "2025-01-06T13:00:00Z",
+      "updatedAt": "2025-01-06T13:00:00Z"
+    },
+    {
+      "name": "Converse Chuck Taylor All-Star",
+      "id": "converse-chuck-taylor-all-star",
+      "description": "The Converse Chuck Taylor All-Star combines comfort and style with its canvas upper and classic rubber sole.",
+      "categoryId": "3",
+      "image": "https://example.com/chuck-taylor-all-star.png",
+      "price": 1500000,
+      "stock": 40,
+      "createdAt": "2025-01-07T14:00:00Z",
+      "updatedAt": "2025-01-07T14:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "shirt",
+      "createdAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "pant",
+      "createdAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "title": "shoe",
+      "createdAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "4",
+      "title": "hoodie",
+      "createdAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "5",
+      "title": "accessory",
+      "createdAt": "2025-01-01T10:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 100000,
+      "status": "completed",
+      "createdAt": "2024-12-29T10:00:00Z",
+      "updatedAt": "2024-12-29T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 65000,
+      "status": "pending",
+      "createdAt": "2024-12-29T10:00:00Z",
+      "updatedAt": "2024-12-29T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "2",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 100000,
+      "status": "completed",
+      "createdAt": "2024-12-30T10:00:00Z",
+      "updatedAt": "2024-12-30T10:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": "2",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 24000,
+      "status": "completed",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "5",
+      "userId": "3",
+      "productId": "nike-air-max-command",
+      "totalPrice": 165000,
+      "status": "pending",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "6",
+      "userId": "1",
+      "productId": "nike-air-max-command",
+      "totalPrice": 165000,
+      "status": "pending",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "7",
+      "userId": "4",
+      "productId": "nike-air-max-command",
+      "totalPrice": 165000,
+      "status": "shipped",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "8",
+      "userId": "1",
+      "productId": "reebok-zig-kinetica-2.5",
+      "totalPrice": 220000,
+      "status": "pending",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "9",
+      "userId": "15",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 200000,
+      "status": "pending",
+      "createdAt": "2024-12-18T09:30:00Z",
+      "updatedAt": "2024-12-18T09:30:00Z"
+    },
+    {
+      "id": "10",
+      "userId": "5",
+      "productId": "nike-air-zoom-pegasus-40",
+      "totalPrice": 180000,
+      "status": "completed",
+      "createdAt": "2024-12-22T14:15:00Z",
+      "updatedAt": "2024-12-22T14:15:00Z"
+    },
+    {
+      "id": "11",
+      "userId": "8",
+      "productId": "nike-air-zoom-winflo-11",
+      "totalPrice": 220000,
+      "status": "shipped",
+      "createdAt": "2024-12-25T11:45:00Z",
+      "updatedAt": "2024-12-25T11:45:00Z"
+    },
+    {
+      "id": "12",
+      "userId": "19",
+      "productId": "adidas-ultraboost-22",
+      "totalPrice": 250000,
+      "status": "completed",
+      "createdAt": "2024-12-28T16:00:00Z",
+      "updatedAt": "2024-12-28T16:00:00Z"
+    },
+    {
+      "id": "13",
+      "userId": "3",
+      "productId": "nike-revolution-6-next-nature",
+      "totalPrice": 190000,
+      "status": "pending",
+      "createdAt": "2024-12-30T08:20:00Z",
+      "updatedAt": "2024-12-30T08:20:00Z"
+    },
+    {
+      "id": "14",
+      "userId": "12",
+      "productId": "reebok-nano-x2",
+      "totalPrice": 230000,
+      "status": "shipped",
+      "createdAt": "2024-12-24T10:30:00Z",
+      "updatedAt": "2024-12-24T10:30:00Z"
+    },
+    {
+      "id": "15",
+      "userId": "7",
+      "productId": "nike-training-socks-3-pack",
+      "totalPrice": 100000,
+      "status": "completed",
+      "createdAt": "2024-12-26T12:45:00Z",
+      "updatedAt": "2024-12-26T12:45:00Z"
+    },
+    {
+      "id": "16",
+      "userId": "4",
+      "productId": "nike-sport-headband",
+      "totalPrice": 70000,
+      "status": "pending",
+      "createdAt": "2024-12-20T14:00:00Z",
+      "updatedAt": "2024-12-20T14:00:00Z"
+    },
+    {
+      "id": "17",
+      "userId": "2",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 200000,
+      "status": "shipped",
+      "createdAt": "2025-01-02T09:00:00Z",
+      "updatedAt": "2025-01-02T09:00:00Z"
+    },
+    {
+      "id": "18",
+      "userId": "18",
+      "productId": "nike-air-zoom-pegasus-40",
+      "totalPrice": 180000,
+      "status": "completed",
+      "createdAt": "2024-12-27T13:20:00Z",
+      "updatedAt": "2024-12-27T13:20:00Z"
+    },
+    {
+      "id": "19",
+      "userId": "9",
+      "productId": "puma-rs-x3",
+      "totalPrice": 240000,
+      "status": "pending",
+      "createdAt": "2024-12-29T10:00:00Z",
+      "updatedAt": "2024-12-29T10:00:00Z"
+    },
+    {
+      "id": "20",
+      "userId": "13",
+      "productId": "nike-revolution-6-next-nature",
+      "totalPrice": 190000,
+      "status": "shipped",
+      "createdAt": "2024-12-23T15:45:00Z",
+      "updatedAt": "2024-12-23T15:45:00Z"
+    },
+    {
+      "id": "21",
+      "userId": "6",
+      "productId": "under-armour-hovr-phantom-2",
+      "totalPrice": 210000,
+      "status": "completed",
+      "createdAt": "2024-12-19T16:30:00Z",
+      "updatedAt": "2024-12-19T16:30:00Z"
+    },
+    {
+      "id": "22",
+      "userId": "10",
+      "productId": "adidas-ultraboost-22",
+      "totalPrice": 250000,
+      "status": "shipped",
+      "createdAt": "2024-12-21T11:15:00Z",
+      "updatedAt": "2024-12-21T11:15:00Z"
+    },
+    {
+      "id": "23",
+      "userId": "20",
+      "productId": "new-balance-990v5",
+      "totalPrice": 280000,
+      "status": "pending",
+      "createdAt": "2024-12-31T09:30:00Z",
+      "updatedAt": "2024-12-31T09:30:00Z"
+    },
+    {
+      "id": "24",
+      "userId": "11",
+      "productId": "nike-air-zoom-winflo-11",
+      "totalPrice": 220000,
+      "status": "completed",
+      "createdAt": "2024-12-18T10:00:00Z",
+      "updatedAt": "2024-12-18T10:00:00Z"
+    },
+    {
+      "id": "25",
+      "userId": "1",
+      "productId": "reebok-nano-x2",
+      "totalPrice": 230000,
+      "status": "shipped",
+      "createdAt": "2025-01-03T12:00:00Z",
+      "updatedAt": "2025-01-03T12:00:00Z"
+    },
+    {
+      "id": "26",
+      "userId": "16",
+      "productId": "nike-sport-headband",
+      "totalPrice": 70000,
+      "status": "pending",
+      "createdAt": "2024-12-28T14:30:00Z",
+      "updatedAt": "2024-12-28T14:30:00Z"
+    },
+    {
+      "id": "27",
+      "userId": "17",
+      "productId": "nike-training-socks-3-pack",
+      "totalPrice": 100000,
+      "status": "completed",
+      "createdAt": "2024-12-19T13:00:00Z",
+      "updatedAt": "2024-12-19T13:00:00Z"
+    },
+    {
+      "id": "28",
+      "userId": "14",
+      "productId": "puma-rs-x3",
+      "totalPrice": 240000,
+      "status": "shipped",
+      "createdAt": "2024-12-30T11:30:00Z",
+      "updatedAt": "2024-12-30T11:30:00Z"
+    },
+    {
+      "id": "29",
+      "userId": "14",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 200000,
+      "status": "completed",
+      "createdAt": "2024-12-29T10:30:00Z",
+      "updatedAt": "2024-12-29T10:30:00Z"
+    },
+    {
+      "id": "30",
+      "userId": "2",
+      "productId": "nike-air-zoom-pegasus-40",
+      "totalPrice": 180000,
+      "status": "shipped",
+      "createdAt": "2024-12-26T12:00:00Z",
+      "updatedAt": "2024-12-26T12:00:00Z"
+    },
+    {
+      "id": "31",
+      "userId": "18",
+      "productId": "adidas-ultraboost-22",
+      "totalPrice": 250000,
+      "status": "pending",
+      "createdAt": "2024-12-24T15:30:00Z",
+      "updatedAt": "2024-12-24T15:30:00Z"
+    },
+    {
+      "id": "32",
+      "userId": "5",
+      "productId": "reebok-nano-x2",
+      "totalPrice": 230000,
+      "status": "completed",
+      "createdAt": "2024-12-31T11:00:00Z",
+      "updatedAt": "2024-12-31T11:00:00Z"
+    },
+    {
+      "id": "33",
+      "userId": "10",
+      "productId": "nike-training-socks-3-pack",
+      "totalPrice": 100000,
+      "status": "shipped",
+      "createdAt": "2025-01-01T14:00:00Z",
+      "updatedAt": "2025-01-01T14:00:00Z"
+    },
+    {
+      "id": "34",
+      "userId": "10",
+      "productId": "nike-court-vapor-11-hc-premium",
+      "totalPrice": 354934,
+      "status": "completed",
+      "createdAt": "2024-01-09T00:00:00Z",
+      "updatedAt": "2024-01-09T00:00:00Z"
+    },
+    {
+      "id": "35",
+      "userId": "1",
+      "productId": "nike-pegasus-41",
+      "totalPrice": 313950,
+      "status": "pending",
+      "createdAt": "2024-01-14T00:00:00Z",
+      "updatedAt": "2024-01-14T00:00:00Z"
+    },
+    {
+      "id": "36",
+      "userId": "1",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 301201,
+      "status": "completed",
+      "createdAt": "2024-01-24T00:00:00Z",
+      "updatedAt": "2024-01-24T00:00:00Z"
+    },
+    {
+      "id": "37",
+      "userId": "7",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 446708,
+      "status": "shipped",
+      "createdAt": "2024-01-20T00:00:00Z",
+      "updatedAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "38",
+      "userId": "6",
+      "productId": "nike-phantom-luna-2-elite-electric",
+      "totalPrice": 355244,
+      "status": "shipped",
+      "createdAt": "2024-01-14T00:00:00Z",
+      "updatedAt": "2024-01-14T00:00:00Z"
+    },
+    {
+      "id": "39",
+      "userId": "5",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 405956,
+      "status": "completed",
+      "createdAt": "2024-01-02T00:00:00Z",
+      "updatedAt": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": "40",
+      "userId": "3",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 485615,
+      "status": "completed",
+      "createdAt": "2024-01-10T00:00:00Z",
+      "updatedAt": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": "41",
+      "userId": "7",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 151002,
+      "status": "pending",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "updatedAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "42",
+      "userId": "9",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 464280,
+      "status": "completed",
+      "createdAt": "2024-01-18T00:00:00Z",
+      "updatedAt": "2024-01-18T00:00:00Z"
+    },
+    {
+      "id": "43",
+      "userId": "3",
+      "productId": "nike-air-max-2017",
+      "totalPrice": 340071,
+      "status": "pending",
+      "createdAt": "2024-01-04T00:00:00Z",
+      "updatedAt": "2024-01-04T00:00:00Z"
+    },
+    {
+      "id": "54",
+      "userId": "3",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 210450,
+      "status": "completed",
+      "createdAt": "2024-02-01T10:00:00Z",
+      "updatedAt": "2024-02-01T10:00:00Z"
+    },
+    {
+      "id": "55",
+      "userId": "8",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 325670,
+      "status": "shipped",
+      "createdAt": "2024-02-03T12:00:00Z",
+      "updatedAt": "2024-02-03T12:00:00Z"
+    },
+    {
+      "id": "56",
+      "userId": "2",
+      "productId": "nike-air-max-command",
+      "totalPrice": 245800,
+      "status": "pending",
+      "createdAt": "2024-02-05T14:00:00Z",
+      "updatedAt": "2024-02-05T14:00:00Z"
+    },
+    {
+      "id": "57",
+      "userId": "6",
+      "productId": "nike-phantom-luna-2-elite-electric",
+      "totalPrice": 500000,
+      "status": "completed",
+      "createdAt": "2024-02-07T08:00:00Z",
+      "updatedAt": "2024-02-07T08:00:00Z"
+    },
+    {
+      "id": "58",
+      "userId": "9",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 310340,
+      "status": "shipped",
+      "createdAt": "2024-02-10T09:00:00Z",
+      "updatedAt": "2024-02-10T09:00:00Z"
+    },
+    {
+      "id": "59",
+      "userId": "5",
+      "productId": "nike-court-vapor-11-hc-premium",
+      "totalPrice": 450200,
+      "status": "pending",
+      "createdAt": "2024-02-12T11:00:00Z",
+      "updatedAt": "2024-02-12T11:00:00Z"
+    },
+    {
+      "id": "60",
+      "userId": "1",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 329000,
+      "status": "shipped",
+      "createdAt": "2024-02-15T13:00:00Z",
+      "updatedAt": "2024-02-15T13:00:00Z"
+    },
+    {
+      "id": "61",
+      "userId": "4",
+      "productId": "nike-air-max-2017",
+      "totalPrice": 198000,
+      "status": "completed",
+      "createdAt": "2024-02-17T07:00:00Z",
+      "updatedAt": "2024-02-17T07:00:00Z"
+    },
+    {
+      "id": "62",
+      "userId": "10",
+      "productId": "nike-mercurial-superfly-10-elite",
+      "totalPrice": 375400,
+      "status": "shipped",
+      "createdAt": "2024-02-20T09:00:00Z",
+      "updatedAt": "2024-02-20T09:00:00Z"
+    },
+    {
+      "id": "63",
+      "userId": "7",
+      "productId": "nike-pegasus-41",
+      "totalPrice": 215600,
+      "status": "pending",
+      "createdAt": "2024-02-22T10:00:00Z",
+      "updatedAt": "2024-02-22T10:00:00Z"
+    },
+    {
+      "id": "64",
+      "userId": "2",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 390000,
+      "status": "completed",
+      "createdAt": "2024-02-25T14:00:00Z",
+      "updatedAt": "2024-02-25T14:00:00Z"
+    },
+    {
+      "id": "65",
+      "userId": "8",
+      "productId": "nike-air-max-command",
+      "totalPrice": 276900,
+      "status": "shipped",
+      "createdAt": "2024-02-01T12:00:00Z",
+      "updatedAt": "2024-02-01T12:00:00Z"
+    },
+    {
+      "id": "66",
+      "userId": "3",
+      "productId": "nike-phantom-luna-2-elite-electric",
+      "totalPrice": 420100,
+      "status": "pending",
+      "createdAt": "2024-02-03T15:00:00Z",
+      "updatedAt": "2024-02-03T15:00:00Z"
+    },
+    {
+      "id": "67",
+      "userId": "6",
+      "productId": "nike-court-vapor-11-hc-premium",
+      "totalPrice": 335400,
+      "status": "shipped",
+      "createdAt": "2024-02-05T08:00:00Z",
+      "updatedAt": "2024-02-05T08:00:00Z"
+    },
+    {
+      "id": "68",
+      "userId": "4",
+      "productId": "nike-air-max-correlate",
+      "totalPrice": 440300,
+      "status": "completed",
+      "createdAt": "2024-02-08T11:00:00Z",
+      "updatedAt": "2024-02-08T11:00:00Z"
+    },
+    {
+      "id": "69",
+      "userId": "1",
+      "productId": "nike-vaporfly-3",
+      "totalPrice": 254700,
+      "status": "shipped",
+      "createdAt": "2024-02-10T09:00:00Z",
+      "updatedAt": "2024-02-10T09:00:00Z"
+    },
+    {
+      "id": "70",
+      "userId": "9",
+      "productId": "nike-tiempo-legend-10-club",
+      "totalPrice": 309800,
+      "status": "pending",
+      "createdAt": "2024-02-15T07:00:00Z",
+      "updatedAt": "2024-02-15T07:00:00Z"
+    },
+    {
+      "id": "71",
+      "userId": "7",
+      "productId": "nike-air-max-command",
+      "totalPrice": 299000,
+      "status": "completed",
+      "createdAt": "2024-02-18T10:00:00Z",
+      "updatedAt": "2024-02-18T10:00:00Z"
+    },
+    {
+      "id": "72",
+      "userId": "5",
+      "productId": "nike-air-max-2017",
+      "totalPrice": 275000,
+      "status": "shipped",
+      "createdAt": "2024-02-22T13:00:00Z",
+      "updatedAt": "2024-02-22T13:00:00Z"
+    },
+    {
+      "id": "73",
+      "userId": "10",
+      "productId": "nike-phantom-luna-2-elite-electric",
+      "totalPrice": 355600,
+      "status": "pending",
+      "createdAt": "2024-02-25T09:00:00Z",
+      "updatedAt": "2024-02-25T09:00:00Z"
+    },
+    {
+      "id": "74",
+      "userId": "7",
+      "productId": "nike-flight-legacy",
+      "totalPrice": 210300,
+      "status": "shipped",
+      "createdAt": "2024-03-01T08:00:00Z",
+      "updatedAt": "2024-03-01T08:00:00Z"
+    },
+    {
+      "id": "75",
+      "userId": "2",
+      "productId": "nike-revolution-6",
+      "totalPrice": 125600,
+      "status": "pending",
+      "createdAt": "2024-03-02T10:00:00Z",
+      "updatedAt": "2024-03-02T10:00:00Z"
+    },
+    {
+      "id": "76",
+      "userId": "5",
+      "productId": "nike-air-max-270",
+      "totalPrice": 325900,
+      "status": "completed",
+      "createdAt": "2024-03-04T14:00:00Z",
+      "updatedAt": "2024-03-04T14:00:00Z"
+    },
+    {
+      "id": "77",
+      "userId": "9",
+      "productId": "nike-dri-fit-t-shirt",
+      "totalPrice": 150200,
+      "status": "shipped",
+      "createdAt": "2024-03-06T12:00:00Z",
+      "updatedAt": "2024-03-06T12:00:00Z"
+    },
+    {
+      "id": "78",
+      "userId": "3",
+      "productId": "nike-sportswear-pants",
+      "totalPrice": 220000,
+      "status": "pending",
+      "createdAt": "2024-03-08T09:00:00Z",
+      "updatedAt": "2024-03-08T09:00:00Z"
+    },
+    {
+      "id": "79",
+      "userId": "8",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 180500,
+      "status": "completed",
+      "createdAt": "2024-03-10T15:00:00Z",
+      "updatedAt": "2024-03-10T15:00:00Z"
+    },
+    {
+      "id": "80",
+      "userId": "4",
+      "productId": "nike-revolution-6",
+      "totalPrice": 275300,
+      "status": "shipped",
+      "createdAt": "2024-03-12T11:00:00Z",
+      "updatedAt": "2024-03-12T11:00:00Z"
+    },
+    {
+      "id": "81",
+      "userId": "10",
+      "productId": "nike-dri-fit-t-shirt",
+      "totalPrice": 198000,
+      "status": "pending",
+      "createdAt": "2024-03-14T08:00:00Z",
+      "updatedAt": "2024-03-14T08:00:00Z"
+    },
+    {
+      "id": "82",
+      "userId": "6",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 315400,
+      "status": "completed",
+      "createdAt": "2024-03-16T10:00:00Z",
+      "updatedAt": "2024-03-16T10:00:00Z"
+    },
+    {
+      "id": "83",
+      "userId": "1",
+      "productId": "nike-air-max-270",
+      "totalPrice": 299800,
+      "status": "shipped",
+      "createdAt": "2024-03-18T07:00:00Z",
+      "updatedAt": "2024-03-18T07:00:00Z"
+    },
+    {
+      "id": "84",
+      "userId": "7",
+      "productId": "nike-sportswear-pants",
+      "totalPrice": 215000,
+      "status": "pending",
+      "createdAt": "2024-03-20T12:00:00Z",
+      "updatedAt": "2024-03-20T12:00:00Z"
+    },
+    {
+      "id": "85",
+      "userId": "3",
+      "productId": "nike-flight-legacy",
+      "totalPrice": 330000,
+      "status": "completed",
+      "createdAt": "2024-03-22T09:00:00Z",
+      "updatedAt": "2024-03-22T09:00:00Z"
+    },
+    {
+      "id": "86",
+      "userId": "8",
+      "productId": "nike-revolution-6",
+      "totalPrice": 250400,
+      "status": "shipped",
+      "createdAt": "2024-03-24T10:00:00Z",
+      "updatedAt": "2024-03-24T10:00:00Z"
+    },
+    {
+      "id": "87",
+      "userId": "4",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 280300,
+      "status": "pending",
+      "createdAt": "2024-03-26T13:00:00Z",
+      "updatedAt": "2024-03-26T13:00:00Z"
+    },
+    {
+      "id": "88",
+      "userId": "9",
+      "productId": "nike-air-max-270",
+      "totalPrice": 305700,
+      "status": "completed",
+      "createdAt": "2024-03-28T14:00:00Z",
+      "updatedAt": "2024-03-28T14:00:00Z"
+    },
+    {
+      "id": "89",
+      "userId": "2",
+      "productId": "nike-dri-fit-t-shirt",
+      "totalPrice": 275600,
+      "status": "shipped",
+      "createdAt": "2024-03-30T10:00:00Z",
+      "updatedAt": "2024-03-30T10:00:00Z"
+    },
+    {
+      "id": "90",
+      "userId": "5",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 195300,
+      "status": "pending",
+      "createdAt": "2024-03-02T12:00:00Z",
+      "updatedAt": "2024-03-02T12:00:00Z"
+    },
+    {
+      "id": "91",
+      "userId": "6",
+      "productId": "nike-flight-legacy",
+      "totalPrice": 340200,
+      "status": "completed",
+      "createdAt": "2024-03-05T11:00:00Z",
+      "updatedAt": "2024-03-05T11:00:00Z"
+    },
+    {
+      "id": "92",
+      "userId": "1",
+      "productId": "nike-sportswear-pants",
+      "totalPrice": 280100,
+      "status": "shipped",
+      "createdAt": "2024-03-07T14:00:00Z",
+      "updatedAt": "2024-03-07T14:00:00Z"
+    },
+    {
+      "id": "93",
+      "userId": "10",
+      "productId": "nike-revolution-6",
+      "totalPrice": 245000,
+      "status": "pending",
+      "createdAt": "2024-03-09T13:00:00Z",
+      "updatedAt": "2024-03-09T13:00:00Z"
+    },
+    {
+      "id": "94",
+      "userId": "6",
+      "productId": "nike-air-max-270",
+      "totalPrice": 320000,
+      "status": "completed",
+      "createdAt": "2024-04-01T10:00:00Z",
+      "updatedAt": "2024-04-01T10:00:00Z"
+    },
+    {
+      "id": "95",
+      "userId": "3",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 210400,
+      "status": "shipped",
+      "createdAt": "2024-04-03T14:00:00Z",
+      "updatedAt": "2024-04-03T14:00:00Z"
+    },
+    {
+      "id": "96",
+      "userId": "8",
+      "productId": "nike-revolution-6",
+      "totalPrice": 185300,
+      "status": "completed",
+      "createdAt": "2024-04-05T09:00:00Z",
+      "updatedAt": "2024-04-05T09:00:00Z"
+    },
+    {
+      "id": "97",
+      "userId": "1",
+      "productId": "nike-sportswear-pants",
+      "totalPrice": 245600,
+      "status": "shipped",
+      "createdAt": "2024-04-07T08:00:00Z",
+      "updatedAt": "2024-04-07T08:00:00Z"
+    },
+    {
+      "id": "98",
+      "userId": "5",
+      "productId": "nike-dri-fit-t-shirt",
+      "totalPrice": 299800,
+      "status": "completed",
+      "createdAt": "2024-04-09T11:00:00Z",
+      "updatedAt": "2024-04-09T11:00:00Z"
+    },
+    {
+      "id": "99",
+      "userId": "7",
+      "productId": "nike-flight-legacy",
+      "totalPrice": 320100,
+      "status": "shipped",
+      "createdAt": "2024-04-11T10:00:00Z",
+      "updatedAt": "2024-04-11T10:00:00Z"
+    },
+    {
+      "id": "100",
+      "userId": "2",
+      "productId": "nike-revolution-6",
+      "totalPrice": 198400,
+      "status": "completed",
+      "createdAt": "2024-04-13T07:00:00Z",
+      "updatedAt": "2024-04-13T07:00:00Z"
+    },
+    {
+      "id": "101",
+      "userId": "9",
+      "productId": "nike-air-max-270",
+      "totalPrice": 305700,
+      "status": "shipped",
+      "createdAt": "2024-04-15T12:00:00Z",
+      "updatedAt": "2024-04-15T12:00:00Z"
+    },
+    {
+      "id": "102",
+      "userId": "10",
+      "productId": "nike-training-hoodie",
+      "totalPrice": 265000,
+      "status": "completed",
+      "createdAt": "2024-04-17T13:00:00Z",
+      "updatedAt": "2024-04-17T13:00:00Z"
+    },
+    {
+      "id": "103",
+      "userId": "4",
+      "productId": "nike-sportswear-pants",
+      "totalPrice": 280300,
+      "status": "shipped",
+      "createdAt": "2024-04-19T14:00:00Z",
+      "updatedAt": "2024-04-19T14:00:00Z"
+    },
+    {
+      "id": "104",
+      "userId": "3",
+      "productId": "nike-elite-socks-3-pack",
+      "totalPrice": 120000,
+      "status": "completed",
+      "createdAt": "2024-05-01T10:00:00Z",
+      "updatedAt": "2024-05-01T10:00:00Z"
+    },
+    {
+      "id": "105",
+      "userId": "5",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 150000,
+      "status": "shipped",
+      "createdAt": "2024-05-02T11:00:00Z",
+      "updatedAt": "2024-05-02T11:00:00Z"
+    },
+    {
+      "id": "106",
+      "userId": "8",
+      "productId": "nike-air-zoom-alphafly-next",
+      "totalPrice": 200000,
+      "status": "completed",
+      "createdAt": "2024-05-04T09:00:00Z",
+      "updatedAt": "2024-05-04T09:00:00Z"
+    },
+    {
+      "id": "107",
+      "userId": "2",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 300000,
+      "status": "shipped",
+      "createdAt": "2024-05-06T14:00:00Z",
+      "updatedAt": "2024-05-06T14:00:00Z"
+    },
+    {
+      "id": "108",
+      "userId": "6",
+      "productId": "nike-pro-compression-shorts",
+      "totalPrice": 90000,
+      "status": "completed",
+      "createdAt": "2024-05-08T12:00:00Z",
+      "updatedAt": "2024-05-08T12:00:00Z"
+    },
+    {
+      "id": "109",
+      "userId": "4",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 110000,
+      "status": "shipped",
+      "createdAt": "2024-05-10T13:00:00Z",
+      "updatedAt": "2024-05-10T13:00:00Z"
+    },
+    {
+      "id": "110",
+      "userId": "7",
+      "productId": "nike-air-max-90",
+      "totalPrice": 250000,
+      "status": "completed",
+      "createdAt": "2024-05-12T08:00:00Z",
+      "updatedAt": "2024-05-12T08:00:00Z"
+    },
+    {
+      "id": "111",
+      "userId": "9",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 300000,
+      "status": "shipped",
+      "createdAt": "2024-05-14T10:00:00Z",
+      "updatedAt": "2024-05-14T10:00:00Z"
+    },
+    {
+      "id": "112",
+      "userId": "10",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 170000,
+      "status": "completed",
+      "createdAt": "2024-05-16T09:00:00Z",
+      "updatedAt": "2024-05-16T09:00:00Z"
+    },
+    {
+      "id": "113",
+      "userId": "1",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 320000,
+      "status": "shipped",
+      "createdAt": "2024-05-18T11:00:00Z",
+      "updatedAt": "2024-05-18T11:00:00Z"
+    },
+    {
+      "id": "114",
+      "userId": "5",
+      "productId": "nike-air-max-90",
+      "totalPrice": 230000,
+      "status": "completed",
+      "createdAt": "2024-05-20T14:00:00Z",
+      "updatedAt": "2024-05-20T14:00:00Z"
+    },
+    {
+      "id": "115",
+      "userId": "3",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 145000,
+      "status": "shipped",
+      "createdAt": "2024-05-22T13:00:00Z",
+      "updatedAt": "2024-05-22T13:00:00Z"
+    },
+    {
+      "id": "116",
+      "userId": "6",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 280000,
+      "status": "completed",
+      "createdAt": "2024-05-24T09:00:00Z",
+      "updatedAt": "2024-05-24T09:00:00Z"
+    },
+    {
+      "id": "117",
+      "userId": "7",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 100000,
+      "status": "shipped",
+      "createdAt": "2024-05-26T10:00:00Z",
+      "updatedAt": "2024-05-26T10:00:00Z"
+    },
+    {
+      "id": "118",
+      "userId": "8",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 160000,
+      "status": "completed",
+      "createdAt": "2024-05-28T11:00:00Z",
+      "updatedAt": "2024-05-28T11:00:00Z"
+    },
+    {
+      "id": "119",
+      "userId": "2",
+      "productId": "nike-elite-socks-3-pack",
+      "totalPrice": 120000,
+      "status": "completed",
+      "createdAt": "2024-06-01T10:00:00Z",
+      "updatedAt": "2024-06-01T10:00:00Z"
+    },
+    {
+      "id": "120",
+      "userId": "4",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 150000,
+      "status": "shipped",
+      "createdAt": "2024-06-02T09:00:00Z",
+      "updatedAt": "2024-06-02T09:00:00Z"
+    },
+    {
+      "id": "121",
+      "userId": "6",
+      "productId": "nike-air-zoom-alphafly-next",
+      "totalPrice": 220000,
+      "status": "completed",
+      "createdAt": "2024-06-03T11:00:00Z",
+      "updatedAt": "2024-06-03T11:00:00Z"
+    },
+    {
+      "id": "122",
+      "userId": "8",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 300000,
+      "status": "shipped",
+      "createdAt": "2024-06-04T12:00:00Z",
+      "updatedAt": "2024-06-04T12:00:00Z"
+    },
+    {
+      "id": "123",
+      "userId": "9",
+      "productId": "nike-pro-compression-shorts",
+      "totalPrice": 95000,
+      "status": "completed",
+      "createdAt": "2024-06-05T13:00:00Z",
+      "updatedAt": "2024-06-05T13:00:00Z"
+    },
+    {
+      "id": "124",
+      "userId": "3",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 105000,
+      "status": "shipped",
+      "createdAt": "2024-06-06T14:00:00Z",
+      "updatedAt": "2024-06-06T14:00:00Z"
+    },
+    {
+      "id": "125",
+      "userId": "5",
+      "productId": "nike-air-max-90",
+      "totalPrice": 250000,
+      "status": "completed",
+      "createdAt": "2024-06-07T15:00:00Z",
+      "updatedAt": "2024-06-07T15:00:00Z"
+    },
+    {
+      "id": "126",
+      "userId": "10",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 280000,
+      "status": "shipped",
+      "createdAt": "2024-06-08T08:00:00Z",
+      "updatedAt": "2024-06-08T08:00:00Z"
+    },
+    {
+      "id": "127",
+      "userId": "7",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 170000,
+      "status": "completed",
+      "createdAt": "2024-06-09T10:00:00Z",
+      "updatedAt": "2024-06-09T10:00:00Z"
+    },
+    {
+      "id": "128",
+      "userId": "1",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 320000,
+      "status": "shipped",
+      "createdAt": "2024-06-10T11:00:00Z",
+      "updatedAt": "2024-06-10T11:00:00Z"
+    },
+    {
+      "id": "129",
+      "userId": "2",
+      "productId": "nike-air-max-90",
+      "totalPrice": 240000,
+      "status": "completed",
+      "createdAt": "2024-06-11T12:00:00Z",
+      "updatedAt": "2024-06-11T12:00:00Z"
+    },
+    {
+      "id": "130",
+      "userId": "4",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 145000,
+      "status": "shipped",
+      "createdAt": "2024-06-12T13:00:00Z",
+      "updatedAt": "2024-06-12T13:00:00Z"
+    },
+    {
+      "id": "131",
+      "userId": "6",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 280000,
+      "status": "completed",
+      "createdAt": "2024-06-13T14:00:00Z",
+      "updatedAt": "2024-06-13T14:00:00Z"
+    },
+    {
+      "id": "132",
+      "userId": "8",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 110000,
+      "status": "shipped",
+      "createdAt": "2024-06-14T15:00:00Z",
+      "updatedAt": "2024-06-14T15:00:00Z"
+    },
+    {
+      "id": "133",
+      "userId": "9",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 160000,
+      "status": "completed",
+      "createdAt": "2024-06-15T08:00:00Z",
+      "updatedAt": "2024-06-15T08:00:00Z"
+    },
+    {
+      "id": "134",
+      "userId": "3",
+      "productId": "nike-air-max-90",
+      "totalPrice": 230000,
+      "status": "shipped",
+      "createdAt": "2024-06-16T09:00:00Z",
+      "updatedAt": "2024-06-16T09:00:00Z"
+    },
+    {
+      "id": "135",
+      "userId": "5",
+      "productId": "nike-elite-socks-3-pack",
+      "totalPrice": 125000,
+      "status": "completed",
+      "createdAt": "2024-06-17T10:00:00Z",
+      "updatedAt": "2024-06-17T10:00:00Z"
+    },
+    {
+      "id": "136",
+      "userId": "7",
+      "productId": "nike-air-zoom-alphafly-next",
+      "totalPrice": 220000,
+      "status": "shipped",
+      "createdAt": "2024-06-18T11:00:00Z",
+      "updatedAt": "2024-06-18T11:00:00Z"
+    },
+    {
+      "id": "137",
+      "userId": "10",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 150000,
+      "status": "completed",
+      "createdAt": "2024-06-19T12:00:00Z",
+      "updatedAt": "2024-06-19T12:00:00Z"
+    },
+    {
+      "id": "138",
+      "userId": "1",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 330000,
+      "status": "shipped",
+      "createdAt": "2024-06-20T13:00:00Z",
+      "updatedAt": "2024-06-20T13:00:00Z"
+    },
+    {
+      "id": "139",
+      "userId": "3",
+      "productId": "nike-elite-socks-3-pack",
+      "totalPrice": 550000,
+      "status": "completed",
+      "createdAt": "2024-07-01T10:00:00Z",
+      "updatedAt": "2024-07-01T10:00:00Z"
+    },
+    {
+      "id": "140",
+      "userId": "6",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 620000,
+      "status": "shipped",
+      "createdAt": "2024-07-02T11:00:00Z",
+      "updatedAt": "2024-07-02T11:00:00Z"
+    },
+    {
+      "id": "141",
+      "userId": "9",
+      "productId": "nike-air-zoom-alphafly-next",
+      "totalPrice": 950000,
+      "status": "completed",
+      "createdAt": "2024-07-03T12:00:00Z",
+      "updatedAt": "2024-07-03T12:00:00Z"
+    },
+    {
+      "id": "142",
+      "userId": "1",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 700000,
+      "status": "shipped",
+      "createdAt": "2024-07-04T13:00:00Z",
+      "updatedAt": "2024-07-04T13:00:00Z"
+    },
+    {
+      "id": "143",
+      "userId": "5",
+      "productId": "nike-pro-compression-shorts",
+      "totalPrice": 500000,
+      "status": "completed",
+      "createdAt": "2024-07-05T14:00:00Z",
+      "updatedAt": "2024-07-05T14:00:00Z"
+    },
+    {
+      "id": "144",
+      "userId": "8",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 750000,
+      "status": "shipped",
+      "createdAt": "2024-07-06T15:00:00Z",
+      "updatedAt": "2024-07-06T15:00:00Z"
+    },
+    {
+      "id": "145",
+      "userId": "7",
+      "productId": "nike-air-max-90",
+      "totalPrice": 800000,
+      "status": "completed",
+      "createdAt": "2024-07-07T08:00:00Z",
+      "updatedAt": "2024-07-07T08:00:00Z"
+    },
+    {
+      "id": "146",
+      "userId": "10",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 880000,
+      "status": "shipped",
+      "createdAt": "2024-07-08T09:00:00Z",
+      "updatedAt": "2024-07-08T09:00:00Z"
+    },
+    {
+      "id": "147",
+      "userId": "4",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 910000,
+      "status": "completed",
+      "createdAt": "2024-07-09T10:00:00Z",
+      "updatedAt": "2024-07-09T10:00:00Z"
+    },
+    {
+      "id": "159",
+      "userId": "3",
+      "productId": "nike-air-max-90",
+      "totalPrice": 780000,
+      "status": "completed",
+      "createdAt": "2024-08-01T10:00:00Z",
+      "updatedAt": "2024-08-01T10:00:00Z"
+    },
+    {
+      "id": "160",
+      "userId": "7",
+      "productId": "nike-therma-fit-jacket",
+      "totalPrice": 820000,
+      "status": "shipped",
+      "createdAt": "2024-08-02T11:00:00Z",
+      "updatedAt": "2024-08-02T11:00:00Z"
+    },
+    {
+      "id": "161",
+      "userId": "5",
+      "productId": "nike-air-zoom-pegasus-39",
+      "totalPrice": 890000,
+      "status": "completed",
+      "createdAt": "2024-08-03T12:00:00Z",
+      "updatedAt": "2024-08-03T12:00:00Z"
+    },
+    {
+      "id": "162",
+      "userId": "1",
+      "productId": "nike-court-vision-low",
+      "totalPrice": 940000,
+      "status": "shipped",
+      "createdAt": "2024-08-04T13:00:00Z",
+      "updatedAt": "2024-08-04T13:00:00Z"
+    },
+    {
+      "id": "163",
+      "userId": "10",
+      "productId": "nike-aeroswift-running-shorts",
+      "totalPrice": 600000,
+      "status": "completed",
+      "createdAt": "2024-08-05T14:00:00Z",
+      "updatedAt": "2024-08-05T14:00:00Z"
+    },
+    {
+      "id": "164",
+      "userId": "8",
+      "productId": "nike-zoomx-vaporfly-next",
+      "totalPrice": 870000,
+      "status": "shipped",
+      "createdAt": "2024-08-06T15:00:00Z",
+      "updatedAt": "2024-08-06T15:00:00Z"
+    },
+    {
+      "id": "165",
+      "userId": "4",
+      "productId": "nike-air-zoom-alphafly-next",
+      "totalPrice": 950000,
+      "status": "completed",
+      "createdAt": "2024-08-07T08:00:00Z",
+      "updatedAt": "2024-08-07T08:00:00Z"
+    },
+    {
+      "id": "166",
+      "userId": "6",
+      "productId": "nike-air-max-90",
+      "totalPrice": 780000,
+      "status": "shipped",
+      "createdAt": "2024-08-08T09:00:00Z",
+      "updatedAt": "2024-08-08T09:00:00Z"
+    },
+    {
+      "id": "167",
+      "userId": "9",
+      "productId": "nike-pro-compression-shorts",
+      "totalPrice": 700000,
+      "status": "completed",
+      "createdAt": "2024-08-09T10:00:00Z",
+      "updatedAt": "2024-08-09T10:00:00Z"
+    },
+    {
+      "id": "168",
+      "userId": "2",
+      "productId": "nike-elite-socks-3-pack",
+      "totalPrice": 810000,
+      "status": "shipped",
+      "createdAt": "2024-08-10T11:00:00Z",
+      "updatedAt": "2024-08-10T11:00:00Z"
+    },
+    {
+      "id": "169",
+      "userId": "6",
+      "productId": "adidas-solarboost-4",
+      "totalPrice": 920000,
+      "status": "completed",
+      "createdAt": "2024-09-01T10:00:00Z",
+      "updatedAt": "2024-09-01T10:00:00Z"
+    },
+    {
+      "id": "170",
+      "userId": "3",
+      "productId": "adidas-solarboost-4",
+      "totalPrice": 860000,
+      "status": "shipped",
+      "createdAt": "2024-09-02T11:00:00Z",
+      "updatedAt": "2024-09-02T11:00:00Z"
+    },
+    {
+      "id": "171",
+      "userId": "8",
+      "productId": "brooks-ghost-15",
+      "totalPrice": 750000,
+      "status": "completed",
+      "createdAt": "2024-09-03T12:00:00Z",
+      "updatedAt": "2024-09-03T12:00:00Z"
+    },
+    {
+      "id": "172",
+      "userId": "1",
+      "productId": "adidas-solarboost-4",
+      "totalPrice": 940000,
+      "status": "shipped",
+      "createdAt": "2024-09-04T13:00:00Z",
+      "updatedAt": "2024-09-04T13:00:00Z"
+    },
+    {
+      "id": "173",
+      "userId": "10",
+      "productId": "adidas-solarboost-4",
+      "totalPrice": 890000,
+      "status": "completed",
+      "createdAt": "2024-09-05T14:00:00Z",
+      "updatedAt": "2024-09-05T14:00:00Z"
+    },
+    {
+      "id": "174",
+      "userId": "4",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 880000,
+      "status": "shipped",
+      "createdAt": "2024-10-01T10:00:00Z",
+      "updatedAt": "2024-10-01T10:00:00Z"
+    },
+    {
+      "id": "175",
+      "userId": "7",
+      "productId": "saucony-endorphin-pro-3",
+      "totalPrice": 910000,
+      "status": "completed",
+      "createdAt": "2024-10-02T11:00:00Z",
+      "updatedAt": "2024-10-02T11:00:00Z"
+    },
+    {
+      "id": "176",
+      "userId": "2",
+      "productId": "new-balance-fresh-foam-1080v11",
+      "totalPrice": 970000,
+      "status": "shipped",
+      "createdAt": "2024-10-03T12:00:00Z",
+      "updatedAt": "2024-10-03T12:00:00Z"
+    },
+    {
+      "id": "177",
+      "userId": "8",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 850000,
+      "status": "completed",
+      "createdAt": "2024-10-04T13:00:00Z",
+      "updatedAt": "2024-10-04T13:00:00Z"
+    },
+    {
+      "id": "178",
+      "userId": "5",
+      "productId": "saucony-endorphin-pro-3",
+      "totalPrice": 920000,
+      "status": "completed",
+      "createdAt": "2024-10-05T14:00:00Z",
+      "updatedAt": "2024-10-05T14:00:00Z"
+    },
+    {
+      "id": "179",
+      "userId": "3",
+      "productId": "new-balance-fresh-foam-1080v11",
+      "totalPrice": 890000,
+      "status": "shipped",
+      "createdAt": "2024-10-06T15:00:00Z",
+      "updatedAt": "2024-10-06T15:00:00Z"
+    },
+    {
+      "id": "180",
+      "userId": "6",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 870000,
+      "status": "completed",
+      "createdAt": "2024-10-07T16:00:00Z",
+      "updatedAt": "2024-10-07T16:00:00Z"
+    },
+    {
+      "id": "181",
+      "userId": "9",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 890000,
+      "status": "shipped",
+      "createdAt": "2024-11-01T10:00:00Z",
+      "updatedAt": "2024-11-01T10:00:00Z"
+    },
+    {
+      "id": "182",
+      "userId": "2",
+      "productId": "saucony-endorphin-pro-3",
+      "totalPrice": 920000,
+      "status": "completed",
+      "createdAt": "2024-11-02T11:00:00Z",
+      "updatedAt": "2024-11-02T11:00:00Z"
+    },
+    {
+      "id": "183",
+      "userId": "10",
+      "productId": "new-balance-fresh-foam-1080v11",
+      "totalPrice": 930000,
+      "status": "completed",
+      "createdAt": "2024-11-03T12:00:00Z",
+      "updatedAt": "2024-11-03T12:00:00Z"
+    },
+    {
+      "id": "184",
+      "userId": "4",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 870000,
+      "status": "shipped",
+      "createdAt": "2024-11-04T13:00:00Z",
+      "updatedAt": "2024-11-04T13:00:00Z"
+    },
+    {
+      "id": "185",
+      "userId": "7",
+      "productId": "saucony-endorphin-pro-3",
+      "totalPrice": 910000,
+      "status": "completed",
+      "createdAt": "2024-11-05T14:00:00Z",
+      "updatedAt": "2024-11-05T14:00:00Z"
+    },
+    {
+      "id": "186",
+      "userId": "3",
+      "productId": "new-balance-fresh-foam-1080v11",
+      "totalPrice": 950000,
+      "status": "shipped",
+      "createdAt": "2024-11-06T15:00:00Z",
+      "updatedAt": "2024-11-06T15:00:00Z"
+    },
+    {
+      "id": "187",
+      "userId": "6",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 880000,
+      "status": "completed",
+      "createdAt": "2024-11-07T16:00:00Z",
+      "updatedAt": "2024-11-07T16:00:00Z"
+    },
+    {
+      "id": "188",
+      "userId": "5",
+      "productId": "nike-react-infinity-run-flyknit",
+      "totalPrice": 890000,
+      "status": "completed",
+      "createdAt": "2025-01-01T10:00:00Z",
+      "updatedAt": "2025-01-01T10:00:00Z"
+    },
+    {
+      "id": "189",
+      "userId": "8",
+      "productId": "saucony-endorphin-pro-3",
+      "totalPrice": 920000,
+      "status": "shipped",
+      "createdAt": "2025-01-02T11:00:00Z",
+      "updatedAt": "2025-01-02T11:00:00Z"
+    },
+    {
+      "id": "190",
+      "userId": "1",
+      "productId": "new-balance-fresh-foam-1080v11",
+      "totalPrice": 930000,
+      "status": "completed",
+      "createdAt": "2025-01-03T12:00:00Z",
+      "updatedAt": "2025-01-03T12:00:00Z"
+    }
+  ]
+}
