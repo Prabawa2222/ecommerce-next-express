@@ -39,13 +39,13 @@ export type DataType = {
 export type ChartDataType = {
   category: string
   data: DataType[]
-}[]
+}
 
 type MultipleDataChartProps = {
   title: string
   label: string
   className?: string
-  chartData: ChartDataType
+  chartData: ChartDataType[]
 }
 
 const MultipleDataChart = ({
