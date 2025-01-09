@@ -12,71 +12,62 @@ type ProductsChartProps = {
 }
 
 const ProductsChart = ({ className }: ProductsChartProps) => {
-  const [products, setProducts] = useState<ChartDataType>({})
-  const [existYears, setExistYears] = useState<number[]>([])
-  const [selectedYear, setSelectedYear] = useState<number>(0)
+  const [productChartData, setProductChartData] = useState<ChartDataType[]>([])
 
-  const getProducts = async () => {
-    const res: IProductJson[] = await fetchAllProduct()
+  const months: MonthType[] = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ]
 
-    const months: MonthType[] = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
-    ]
+  const getProductChartData = async () => {
+    const products: IProductJson[] = await fetchAllProduct()
 
-    const productsByYear: ChartDataType = {}
-    const years: number[] = []
+    const chartDataMap = new Map<string, number[]>()
 
-    res.forEach((item) => {
-      // Find date, year and month of a product
-      const date = new Date(item.createdAt)
-      const year = date.getFullYear()
-      const month = date.toLocaleDateString('en-US', {
-        month: 'long'
-      }) as MonthType
+    products.forEach((product) => {
+      const date = new Date(product.createdAt)
+      const year = date.getFullYear().toString()
+      const month = date.getMonth()
 
-      // Add non-duplicate year
-      if (!years.includes(year)) years.push(year)
-
-      // Initialize productsByYear data
-      if (!productsByYear[year])
-        productsByYear[year] = months.map((month) => ({ month, amount: 0 }))
-
-      const existingMonthData = productsByYear[year].find(
-        (data) => data.month === month
-      )
-
-      if (existingMonthData) {
-        existingMonthData.amount += 1
-      } else {
-        productsByYear[year].push({ month, amount: 1 })
+      if (!chartDataMap.has(year)) {
+        chartDataMap.set(year, Array(12).fill(0))
       }
+
+      chartDataMap.get(year)![month] += 1 // increment the count for the month
     })
 
-    setExistYears(years)
-    setSelectedYear(years[years.length - 1])
-    setProducts(productsByYear)
+    const chartData: ChartDataType[] = Array.from(chartDataMap.entries()).map(
+      ([year, amounts]) => ({
+        year,
+        values: amounts.map((amount, index) => ({
+          month: months[index],
+          amount
+        }))
+      })
+    )
+
+    setProductChartData(chartData)
   }
 
   useEffect(() => {
-    getProducts()
+    getProductChartData()
   }, [])
 
   return (
     <DataChart
       title='Product Growth'
       label='Total'
-      chart={{ data: products, existYears, selectedYear }}
+      chartData={productChartData}
       className={className}
     />
   )

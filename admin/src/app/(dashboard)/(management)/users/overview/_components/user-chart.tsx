@@ -12,71 +12,62 @@ type UsersChartProps = {
 }
 
 const UsersChart = ({ className }: UsersChartProps) => {
-  const [users, setUsers] = useState<ChartDataType>({})
-  const [existYears, setExistYears] = useState<number[]>([])
-  const [selectedYear, setSelectedYear] = useState<number>(0)
+  const [userChartData, setUserChartData] = useState<ChartDataType[]>([])
 
-  const getUsers = async () => {
-    const res: IUserJson[] = await fetchAllUser()
+  const months: MonthType[] = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ]
 
-    const months: MonthType[] = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
-    ]
+  const getUsersChartData = async () => {
+    const users: IUserJson[] = await fetchAllUser()
 
-    const usersByYear: ChartDataType = {}
-    const years: number[] = []
+    const chartDataMap = new Map<string, number[]>()
 
-    res.forEach((item) => {
-      // Find date, year and month of a user
-      const date = new Date(item.createdAt)
-      const year = date.getFullYear()
-      const month = date.toLocaleDateString('en-US', {
-        month: 'long'
-      }) as MonthType
+    users.forEach((user) => {
+      const date = new Date(user.createdAt)
+      const year = date.getFullYear().toString()
+      const month = date.getMonth()
 
-      // Add non-duplicate year
-      if (!years.includes(year)) years.push(year)
-
-      // Initialize usersByYear data
-      if (!usersByYear[year])
-        usersByYear[year] = months.map((month) => ({ month, amount: 0 }))
-
-      const existingMonthData = usersByYear[year].find(
-        (data) => data.month === month
-      )
-
-      if (existingMonthData) {
-        existingMonthData.amount += 1
-      } else {
-        usersByYear[year].push({ month, amount: 1 })
+      if (!chartDataMap.has(year)) {
+        chartDataMap.set(year, Array(12).fill(0))
       }
+
+      chartDataMap.get(year)![month] += 1 // increment the count for the month
     })
 
-    setExistYears(years)
-    setSelectedYear(years[years.length - 1])
-    setUsers(usersByYear)
+    const chartData: ChartDataType[] = Array.from(chartDataMap.entries()).map(
+      ([year, amounts]) => ({
+        year,
+        values: amounts.map((amount, index) => ({
+          month: months[index],
+          amount
+        }))
+      })
+    )
+
+    setUserChartData(chartData)
   }
 
   useEffect(() => {
-    getUsers()
+    getUsersChartData()
   }, [])
 
   return (
     <DataChart
       title='User Growth'
       label='Total'
-      chart={{ data: users, existYears, selectedYear }}
+      chartData={userChartData}
       className={className}
     />
   )

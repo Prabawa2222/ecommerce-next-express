@@ -26,30 +26,33 @@ import {
 } from '@/components/ui/dropdown-menu'
 import ChartSkeleton from './data-chart-skeleton'
 
-export type ChartDataType = Record<
-  number,
-  { month: MonthType; amount: number }[]
->
+export type DataValueType = {
+  month: MonthType
+  amount: number
+}
 
-interface IChartData {
-  data: ChartDataType
-  existYears: number[]
-  selectedYear: number
+export type ChartDataType = {
+  year: string
+  values: DataValueType[]
 }
 
 type DataChartProps = {
   title: string
   label: string
   className?: string
-  chart: IChartData
+  chartData: ChartDataType[]
 }
 
-const DataChart = ({ title, label, className, chart }: DataChartProps) => {
+const DataChart = ({ title, label, className, chartData }: DataChartProps) => {
   const isMobile = useIsMobile()
   const isDesktop = useIsDesktop()
 
-  const [selectedYear, setSelectedYear] = useState<number>(0)
+  const [years, setYears] = useState<string[]>([])
+  const [selectedYear, setSelectedYear] = useState<string>('')
   const [mobileChartDataIndex, setMobileChartDataIndex] = useState<0 | 1>(0)
+  const [displayedChartData, setDisplayedChartData] = useState<DataValueType[]>(
+    []
+  )
 
   const chartConfig = {
     amount: {
@@ -58,11 +61,48 @@ const DataChart = ({ title, label, className, chart }: DataChartProps) => {
     }
   } satisfies ChartConfig
 
-  useEffect(() => {
-    setSelectedYear(chart.selectedYear)
-  }, [chart])
+  const getInitialYears = () => {
+    const existYears = chartData.map((item) => item.year)
 
-  if (!selectedYear) return <ChartSkeleton className={cn(className)} />
+    setYears(existYears)
+    setSelectedYear(existYears[existYears.length - 1])
+  }
+
+  const getDisplayedChartData = () => {
+    const valueBySelectedYear = chartData.find(
+      (item) => item.year === selectedYear
+    )?.values
+
+    if (valueBySelectedYear) {
+      if (isMobile && mobileChartDataIndex === 0) {
+        return setDisplayedChartData(valueBySelectedYear?.slice(0, 6))
+      }
+
+      if (isMobile && mobileChartDataIndex === 1) {
+        return setDisplayedChartData(valueBySelectedYear?.slice(6, 12))
+      }
+
+      return setDisplayedChartData(valueBySelectedYear)
+    }
+  }
+
+  useEffect(() => {
+    getInitialYears()
+  }, [chartData])
+
+  useEffect(() => {
+    getDisplayedChartData()
+  }, [
+    chartData,
+    years,
+    selectedYear,
+    isMobile,
+    isDesktop,
+    mobileChartDataIndex
+  ])
+
+  if (displayedChartData.length === 0)
+    return <ChartSkeleton className={cn(className)} />
 
   return (
     <Card className={cn('p-4 md:p-6', className)}>
@@ -86,8 +126,8 @@ const DataChart = ({ title, label, className, chart }: DataChartProps) => {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align='end' className='w-fit min-w-0'>
-              {chart.existYears.length > 0 &&
-                chart.existYears.map((year) => (
+              {years.length > 0 &&
+                years.map((year) => (
                   <DropdownMenuItem
                     key={year}
                     onClick={() => setSelectedYear(year)}
@@ -106,13 +146,7 @@ const DataChart = ({ title, label, className, chart }: DataChartProps) => {
       >
         <BarChart
           accessibilityLayer
-          data={
-            isMobile && mobileChartDataIndex === 0
-              ? chart.data[selectedYear]?.slice(0, 6)
-              : isMobile && mobileChartDataIndex === 1
-                ? chart.data[selectedYear]?.slice(6, 12)
-                : chart.data[selectedYear]
-          }
+          data={displayedChartData}
           barSize={isMobile ? '12%' : '6%'}
           margin={{ left: 8, top: 16, right: 8, bottom: 8 }}
         >

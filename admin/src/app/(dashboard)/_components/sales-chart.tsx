@@ -12,75 +12,62 @@ type SalesChartProps = {
 }
 
 const SalesChart = ({ className }: SalesChartProps) => {
-  const [sales, setSales] = useState<ChartDataType>({})
-  const [existYears, setExistYears] = useState<number[]>([])
-  const [selectedYear, setSelectedYear] = useState<number>(0)
+  const [salesChartData, setSalesChartData] = useState<ChartDataType[]>([])
 
-  const getSales = async () => {
-    const res: IOrderJson[] = await fetchAllOrder()
+  const months: MonthType[] = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+  ]
 
-    const months: MonthType[] = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
-    ]
+  const getSalesChartData = async () => {
+    const orders: IOrderJson[] = await fetchAllOrder()
 
-    const salesByYear: ChartDataType = {}
-    const years: number[] = []
+    const chartDataMap = new Map<string, number[]>()
 
-    res
-      .filter(
-        (item) => item.status === 'completed' || item.status === 'shipped'
-      )
-      .forEach((item) => {
-        // Find date, year and month of an order
-        const date = new Date(item.createdAt)
-        const year = date.getFullYear()
-        const month = date.toLocaleDateString('en-US', {
-          month: 'long'
-        }) as MonthType
+    orders.forEach((order) => {
+      const date = new Date(order.createdAt)
+      const year = date.getFullYear().toString()
+      const month = date.getMonth()
 
-        // Add non-duplicate year of compteled order
-        if (!years.includes(year)) years.push(year)
+      if (!chartDataMap.has(year)) {
+        chartDataMap.set(year, Array(12).fill(0))
+      }
 
-        // Initialize salesByYear data
-        if (!salesByYear[year])
-          salesByYear[year] = months.map((month) => ({ month, amount: 0 }))
+      chartDataMap.get(year)![month] += order.totalPrice // increment the total price for the month
+    })
 
-        const existingMonthData = salesByYear[year].find(
-          (data) => data.month === month
-        )
-
-        if (existingMonthData) {
-          existingMonthData.amount += item.totalPrice
-        } else {
-          salesByYear[year].push({ month, amount: item.totalPrice })
-        }
+    const chartData: ChartDataType[] = Array.from(chartDataMap.entries()).map(
+      ([year, amounts]) => ({
+        year,
+        values: amounts.map((amount, index) => ({
+          month: months[index],
+          amount
+        }))
       })
+    )
 
-    setExistYears(years)
-    setSelectedYear(years[years.length - 1])
-    setSales(salesByYear)
+    setSalesChartData(chartData)
   }
 
   useEffect(() => {
-    getSales()
+    getSalesChartData()
   }, [])
 
   return (
     <DataChart
       title='Sales Growth'
       label='Amount'
-      chart={{ data: sales, existYears, selectedYear }}
+      chartData={salesChartData}
       className={className}
     />
   )
