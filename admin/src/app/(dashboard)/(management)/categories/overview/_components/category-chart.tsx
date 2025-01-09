@@ -92,7 +92,7 @@ const CategoryChart = ({ className }: CategoryChartProps) => {
   return (
     <MultipleDataChart
       title='Purchased Category'
-      label='total'
+      label='Total'
       chartData={categoryChartData}
       className={className}
     />
