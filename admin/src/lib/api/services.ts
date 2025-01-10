@@ -1,6 +1,12 @@
 import { v4 as uuidv4 } from 'uuid'
 import { z } from 'zod'
-import { AddProductFormSchema, EditProductFormSchema } from '../types/form'
+import {
+  AddCategoryFormSchema,
+  AddProductFormSchema,
+  EditProductFormSchema
+} from '../types/form'
+import { ICategoryJson } from '../types/json'
+import { generateUniqueNumberId } from '../utils'
 
 const BASE_URL = 'http://localhost:3004'
 
@@ -139,6 +145,36 @@ export const fetchUpdateProduct = async (
 
 export const fetchDeleteProduct = async (id: string) => {
   const res = await fetch(`${BASE_URL}/products/${id}`, {
+    method: 'DELETE'
+  })
+
+  return await res.json()
+}
+
+export const fetchAddCategory = async (
+  data: z.infer<typeof AddCategoryFormSchema>
+) => {
+  const categories: ICategoryJson[] = await fetchAllCategory()
+  const categoryIds = categories.map((category) => Number(category.id))
+  const newId = generateUniqueNumberId(categoryIds)
+
+  const res = await fetch(`${BASE_URL}/categories/`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      ...data,
+      id: newId.toString(),
+      createdAt: new Date()
+    })
+  })
+
+  return await res.json()
+}
+
+export const fetchDeleteCategory = async (id: string) => {
+  const res = await fetch(`${BASE_URL}/categories/${id}`, {
     method: 'DELETE'
   })
 
