@@ -41,3 +41,7 @@ export const AddCategoryFormSchema = z.object({
     message: 'Title name must be at least 3 characters.'
   })
 })
+
+export const EditOrderFormSchema = z.object({
+  status: z.enum(['completed', 'shipped', 'pending'])
+})
