@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
 import DeleteCategoryModal from '../modal/delete-category-modal'
+import CategoryDetailModal from '../modal/category-detail-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -98,7 +99,7 @@ export const categoryColumns: ColumnDef<CategoryTable>[] = [
               </DropdownMenuItem>
               <DropdownMenuSeparator />
               <DropdownMenuItem asChild>
-                {/* <UserDetailModal user={row.original} /> */}
+                <CategoryDetailModal category={row.original} />
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 {/* <EditUserModal user={row.original} /> */}
