@@ -35,3 +35,9 @@ export const EditProductFormSchema = z.object({
     message: 'Stock is required'
   })
 })
+
+export const AddCategoryFormSchema = z.object({
+  title: z.string({ required_error: 'Required' }).min(3, {
+    message: 'Title name must be at least 3 characters.'
+  })
+})
