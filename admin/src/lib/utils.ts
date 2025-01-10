@@ -60,3 +60,19 @@ export const formatDateForTable = (date: Date): string => {
 
   return formattedDate
 }
+
+export const generateUniqueNumberId = (numbers: number[]) => {
+  const sortedNumbers = numbers.sort((a: number, b: number) => a - b)
+
+  let newId = 1
+
+  for (const id of sortedNumbers) {
+    if (id === newId) {
+      newId++
+    } else {
+      break
+    }
+  }
+
+  return newId
+}
