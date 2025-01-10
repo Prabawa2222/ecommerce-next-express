@@ -14,6 +14,7 @@ import {
 import { Button } from '@/components/ui/button'
 import { OrderStatusType } from '@/lib/types/types'
 import OrderDetailModal from '../modal/order-detail-modal'
+import EditOrderModal from '../modal/edit-order-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -172,9 +173,9 @@ export const orderColumns: ColumnDef<OrderTable>[] = [
               <DropdownMenuItem asChild>
                 <OrderDetailModal order={row.original} />
               </DropdownMenuItem>
-              {/* <DropdownMenuItem asChild>
-                <EditProductModal product={row.original} />
-              </DropdownMenuItem> */}
+              <DropdownMenuItem asChild>
+                <EditOrderModal order={row.original} />
+              </DropdownMenuItem>
               {/* <DropdownMenuItem asChild className='text-destructive'>
                 <DeleteProductModal id={row.original.id} />
               </DropdownMenuItem> */}
