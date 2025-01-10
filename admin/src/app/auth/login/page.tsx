@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import FormErrorMessage from '@/components/form-error-message'
+import SubHeader from '@/components/header/sub-header'
 
 const formSchema = z.object({
   email: z
@@ -59,6 +60,7 @@ const LoginForm = () => {
         onSubmit={form.handleSubmit(onSubmit)}
         className='flex w-full flex-col items-center justify-center gap-8 rounded-sm border p-6'
       >
+        <SubHeader>Login</SubHeader>
         <div className='flex w-full flex-col gap-4'>
           <FormField
             control={form.control}
