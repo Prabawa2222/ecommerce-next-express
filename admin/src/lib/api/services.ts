@@ -55,6 +55,12 @@ export const fetchAllOrder = async () => {
   return await res.json()
 }
 
+export const fetchAllPayment = async () => {
+  const res = await fetch(`${BASE_URL}/payments`)
+
+  return await res.json()
+}
+
 export const fetchSingleData = async (
   data: 'users' | 'products' | 'orders' | 'categories',
   id: string

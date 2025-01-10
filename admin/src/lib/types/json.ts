@@ -37,3 +37,11 @@ export interface IOrderJson {
   createdAt: string
   updatedAt: string
 }
+
+export interface IPaymentJson {
+  id: string
+  orderId: string
+  paymentMethod: string
+  status: 'pending' | 'paid' | 'failed'
+  transactionId: string
+}
