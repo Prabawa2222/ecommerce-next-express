@@ -76,3 +76,22 @@ export const generateUniqueNumberId = (numbers: number[]) => {
 
   return newId
 }
+
+export const sortChartDataByCustomOrder = (
+  data: { label: string; amount: number }[],
+  order: string[]
+) => {
+  const sortOrder = order.reduce(
+    (acc, order, index) => {
+      acc[order] = index
+      return acc
+    },
+    {} as Record<string, number>
+  )
+
+  const sortedData = data.sort((a, b) => {
+    return sortOrder[a.label] - sortOrder[b.label]
+  })
+
+  return sortedData
+}

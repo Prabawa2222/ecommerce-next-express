@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 import { fetchAllOrder } from '@/lib/api/services'
 import { IOrderJson } from '@/lib/types/json'
+import { sortChartDataByCustomOrder } from '@/lib/utils'
 import DataPieChart, { IChartData } from '@/components/chart/pie-chart'
 
 type OrderPieChartProps = {
@@ -31,7 +32,13 @@ const OrderStatusPieChart = ({ className }: OrderPieChartProps) => {
       })
     )
 
-    setOrderChartData(chartData)
+    const sortedChartData = sortChartDataByCustomOrder(chartData, [
+      'pending',
+      'shipped',
+      'completed'
+    ])
+
+    setOrderChartData(sortedChartData)
   }
 
   useEffect(() => {
