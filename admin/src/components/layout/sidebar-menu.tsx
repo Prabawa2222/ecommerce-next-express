@@ -1,12 +1,11 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import {
   Boxes,
-  ChartColumnDecreasing,
   LayoutDashboard,
   ShoppingCart,
-  SquareChartGantt,
   StretchHorizontal,
   UserRound
 } from 'lucide-react'
@@ -21,7 +20,6 @@ import {
   SidebarTrigger,
   useSidebar
 } from '../ui/sidebar'
-import { usePathname } from 'next/navigation'
 
 const managementItems = [
   {
@@ -53,18 +51,6 @@ const managementItems = [
     baseUrl: '/orders',
     url: '/orders/overview',
     icon: ShoppingCart
-  },
-  {
-    title: 'Analytics',
-    baseUrl: '/analytics',
-    url: '/analytics/overview',
-    icon: ChartColumnDecreasing
-  },
-  {
-    title: 'Reports',
-    baseUrl: '/reports',
-    url: '/reports/overview',
-    icon: SquareChartGantt
   }
 ]
 
