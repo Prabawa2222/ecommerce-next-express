@@ -180,7 +180,7 @@ const DashboardSummary = () => {
       })}
     >
       <SummaryCard
-        title='Total Sales'
+        title='Total Revenue'
         description={formatToRupiah(summary.sale.total)}
         growth={{ amount: summary.sale.growth || 0, format: 'percentage' }}
         icon={UsersRound}
