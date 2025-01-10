@@ -13,6 +13,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Button } from '@/components/ui/button'
 import { OrderStatusType } from '@/lib/types/types'
+import OrderDetailModal from '../modal/order-detail-modal'
 
 // This type is used to define the shape of our data.
 // You can use a Zod schema here if you want.
@@ -64,9 +65,7 @@ export const orderColumns: ColumnDef<OrderTable>[] = [
         </Button>
       )
     },
-    cell: ({ row }) => (
-      <div className='line-clamp-2 max-w-52'>{row.original.userId}</div>
-    )
+    cell: ({ row }) => <div className='ml-4'>{row.original.userId}</div>
   },
   {
     accessorKey: 'productId',
@@ -170,9 +169,9 @@ export const orderColumns: ColumnDef<OrderTable>[] = [
                 Copy product ID
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              {/* <DropdownMenuItem asChild>
-                <ProductDetailModal product={row.original} />
-              </DropdownMenuItem> */}
+              <DropdownMenuItem asChild>
+                <OrderDetailModal order={row.original} />
+              </DropdownMenuItem>
               {/* <DropdownMenuItem asChild>
                 <EditProductModal product={row.original} />
               </DropdownMenuItem> */}
