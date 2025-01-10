@@ -13,3 +13,5 @@ export type MonthType =
   | 'December'
 
 export type UserRoleType = 'admin' | 'user' | 'cashier'
+
+export type OrderStatusType = 'pending' | 'shipped' | 'completed'
