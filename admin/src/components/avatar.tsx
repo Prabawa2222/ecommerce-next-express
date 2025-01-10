@@ -40,13 +40,16 @@ const AppAvatar = () => {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <Link href='/profile' aria-label='Profile page'>
+          <Link href='/profile' aria-label='Profile page' className='w-full'>
             Profile
           </Link>
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <button onClick={() => signOut()} className='text-destructive'>
+          <button
+            onClick={() => signOut()}
+            className='w-full text-left text-destructive'
+          >
             Logout
           </button>
         </DropdownMenuItem>
