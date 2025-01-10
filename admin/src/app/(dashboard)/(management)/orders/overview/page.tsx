@@ -1,13 +1,13 @@
 import PageContainer from '@/components/container/page-container'
 import OrderChart from './_components/order-chart'
-import OrderPieChart from './_components/order-pie-chart'
+import OrderStatusPieChart from './_components/order-status-pie-chart'
 
 const OrdersOverviewPage = () => {
   return (
     <PageContainer>
       <div className='grid grid-cols-7 gap-4'>
         <OrderChart className='order-2 col-span-7 lg:order-1 lg:col-span-5' />
-        <OrderPieChart className='order-1 col-span-7 lg:order-2 lg:col-span-2' />
+        <OrderStatusPieChart className='order-1 col-span-7 lg:order-2 lg:col-span-2' />
       </div>
     </PageContainer>
   )

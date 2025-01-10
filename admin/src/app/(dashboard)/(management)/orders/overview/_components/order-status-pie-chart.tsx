@@ -10,7 +10,7 @@ type OrderPieChartProps = {
   className?: string
 }
 
-const OrderPieChart = ({ className }: OrderPieChartProps) => {
+const OrderStatusPieChart = ({ className }: OrderPieChartProps) => {
   const [orderChartData, setOrderChartData] = useState<IChartData[]>([])
 
   const getOrderChartData = async () => {
@@ -48,4 +48,4 @@ const OrderPieChart = ({ className }: OrderPieChartProps) => {
   )
 }
 
-export default OrderPieChart
+export default OrderStatusPieChart
