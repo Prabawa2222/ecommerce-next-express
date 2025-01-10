@@ -3,6 +3,7 @@ import { z } from 'zod'
 import {
   AddCategoryFormSchema,
   AddProductFormSchema,
+  EditOrderFormSchema,
   EditProductFormSchema
 } from '../types/form'
 import { ICategoryJson } from '../types/json'
@@ -168,6 +169,21 @@ export const fetchAddCategory = async (
       id: newId.toString(),
       createdAt: new Date()
     })
+  })
+
+  return await res.json()
+}
+
+export const fetchUpdateOrder = async (
+  id: string,
+  data: z.infer<typeof EditOrderFormSchema>
+) => {
+  const res = await fetch(`${BASE_URL}/orders/${id}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ ...data, updatedAt: new Date() })
   })
 
   return await res.json()
