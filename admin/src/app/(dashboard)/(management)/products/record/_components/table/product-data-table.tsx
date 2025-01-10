@@ -2,9 +2,9 @@ import { formatDateForTable } from '@/lib/utils'
 import { IProductJson } from '@/lib/types/json'
 import { fetchAllProduct } from '@/lib/api/services'
 import { DataTable } from '@/components/table/data-table'
-import { productColumns, UserTable } from './product-columns'
+import { productColumns, ProductTable } from './product-columns'
 
-async function getData(): Promise<UserTable[]> {
+async function getData(): Promise<ProductTable[]> {
   const res: IProductJson[] = await fetchAllProduct()
 
   return res.map((user) => ({
