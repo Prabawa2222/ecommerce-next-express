@@ -1,7 +1,6 @@
 'use client'
 
 import { signOut, useSession } from 'next-auth/react'
-import Link from 'next/link'
 
 import Paragraph from './paragraph/paragraph'
 import SubParagraph from './paragraph/sub-paragraph'
@@ -39,11 +38,11 @@ const AppAvatar = () => {
           </SubParagraph>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
+        {/* <DropdownMenuItem>
           <Link href='/profile' aria-label='Profile page' className='w-full'>
             Profile
           </Link>
-        </DropdownMenuItem>
+        </DropdownMenuItem> */}
         <DropdownMenuSeparator />
         <DropdownMenuItem>
           <button
