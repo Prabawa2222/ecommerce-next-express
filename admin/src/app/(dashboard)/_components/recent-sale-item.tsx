@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import { formatToRupiah } from '@/lib/utils'
 import Paragraph from '@/components/paragraph/paragraph'
 import SubParagraph from '@/components/paragraph/sub-paragraph'
 import { Separator } from '@/components/ui/separator'
@@ -31,7 +32,7 @@ const RecentSaleItem = ({ recentSale }: RecentSaleItemProps) => {
           <SubParagraph>{recentSale.user.email}</SubParagraph>
         </div>
       </div>
-      <p>+{recentSale.amount.toLocaleString('id-ID')}</p>
+      <p>+{formatToRupiah(recentSale.amount)}</p>
       <Separator className='md:hidden' />
     </div>
   )
