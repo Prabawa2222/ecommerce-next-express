@@ -30,6 +30,7 @@ const CreateCategoryForm = () => {
 
   const {
     setError,
+    reset,
     formState: { errors, isSubmitting }
   } = form
 
@@ -45,6 +46,8 @@ const CreateCategoryForm = () => {
         title: 'Success',
         description: 'Category has been updated successfully.'
       })
+
+      reset()
     } catch (error) {
       console.error(error)
       toast({

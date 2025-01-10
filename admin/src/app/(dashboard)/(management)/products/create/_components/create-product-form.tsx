@@ -43,12 +43,11 @@ const CreateProductForm = () => {
 
   const {
     setError,
+    reset,
     formState: { errors, isSubmitting }
   } = form
 
   const onSubmit = async (values: z.infer<typeof AddProductFormSchema>) => {
-    console.log(values)
-
     try {
       const res = await fetchAddProduct(values)
 
@@ -60,6 +59,8 @@ const CreateProductForm = () => {
         title: 'Success',
         description: 'User has been updated successfully.'
       })
+
+      reset()
     } catch (error) {
       console.error(error)
       toast({
