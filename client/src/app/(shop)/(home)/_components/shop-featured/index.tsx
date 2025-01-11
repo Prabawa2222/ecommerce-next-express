@@ -1,41 +1,26 @@
 import Carousel from "@/components/shared/carousel";
 import MaxWidthWrapper from "@/components/shared/max-width-wrapper";
+import ProductCard from "@/components/shared/product-card";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ShopFeatured() {
-  const carouselItems = Array.from({ length: 10 }, (_, i) => (
+  const products = Array.from({ length: 10 }, (_, i) => (
     <div key={i} className="px-3">
-      <Link
-        href={"#"}
-        className="flex flex-col items-center justify-center w-full cursor-pointer gap-y-3"
-      >
-        {/* TODO: handle case when images is only 1 */}
-        <div className="group relative w-full h-[380px] overflow-hidden rounded-sm">
-          <Image
-            src={"/product-sneaker-1.avif"}
-            alt="Sneakers"
-            fill
-            className="object-cover"
-          />
-          <Image
-            src={"/product-sneaker-2.avif"}
-            alt="Sneakers"
-            fill
-            className="object-cover absolute opacity-0 group-hover:opacity-100 transition-all duration-100 "
-          />
-        </div>
-        <div className="flex flex-col justify-between items-center w-full gap-y-1">
-          <div className="flex justify-between items-center w-full">
-            <h4 className="grow text-xl font-bold">Sneakers White</h4>
-            <p className="text-sm">50%</p>
-          </div>
-          <div className="flex justify-between items-center w-full">
-            <p className="font-bold text">$50.00</p>
-            <p className="text-brand-white-200/70 line-through">$100</p>
-          </div>
-        </div>
-      </Link>
+      <ProductCard
+        product={{
+          name: "Sneakers White",
+          badge: "Out-Of-Stock",
+          href: "/search?category=sneaker",
+          images: [
+            { src: "/product-sneaker-1.avif", alt: "Sneaker" },
+            { src: "/product-sneaker-2.avif", alt: "Sneakers" },
+          ],
+          price: "$100.00",
+          discountPercent: "50%",
+          discountPrice: "$50.00",
+        }}
+      />
     </div>
   ));
 
@@ -241,8 +226,8 @@ export default function ShopFeatured() {
           </div>
 
           <div className="flex flex-col items-center justify-center w-full gap-12">
-            <Carousel items={carouselItems} />
-            <Carousel items={carouselItems} />
+            <Carousel items={products} />
+            <Carousel items={products} />
           </div>
         </div>
       </MaxWidthWrapper>

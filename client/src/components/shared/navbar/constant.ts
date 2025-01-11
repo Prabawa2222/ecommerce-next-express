@@ -23,20 +23,28 @@ export const NAVLINK: NavlinkType[] = [
     triggerDisplay: "Product",
     childs: [
       {
+        display: "All Product",
+        href: "/search?category=all-product",
+      },
+      {
+        display: "Promo",
+        href: "/search?category=promo",
+      },
+      {
         display: "Jeans",
-        href: "#",
+        href: "/search?category=jeans",
       },
       {
         display: "Shirt",
-        href: "#",
+        href: "/search?category=shirt",
       },
       {
         display: "T-Shirt",
-        href: "#",
+        href: "/search?category=t-shirt",
       },
       {
         display: "Sneakers",
-        href: "#",
+        href: "/search?category=sneaker",
       },
     ],
   },

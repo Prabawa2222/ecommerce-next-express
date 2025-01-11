@@ -1,9 +1,8 @@
 "use client";
 
-// import { motion, useScroll, useTransform } from "framer-motion";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import useMeasure from "react-use-measure";
 import { HEADLINE_IMAGES } from "./constant";
 
@@ -13,13 +12,14 @@ export default function HeroHeadline() {
   const [ref, { width }] = useMeasure();
   const [refContainer, { width: widthContainer }] = useMeasure();
 
+  // Memoized transforms to avoid recalculating
   const carouselContainer = useScroll({
     target: carousel,
   });
   const xcarousel = useTransform(
     carouselContainer.scrollYProgress,
     [0, 1],
-    [0, -(width - widthContainer)]
+    useMemo(() => [0, -(width - widthContainer)], [width, widthContainer])
   );
 
   const sectionContainer = useScroll({
@@ -31,7 +31,6 @@ export default function HeroHeadline() {
     [0, 0.1, 0.2, 0.8, 0.9, 1],
     [0, 0, 1, 1, 0, 0]
   );
-
   const headingTextZindex = useTransform(
     sectionContainer.scrollYProgress,
     [0, 0.1, 0.2, 0.8, 0.9, 1],
@@ -44,6 +43,7 @@ export default function HeroHeadline() {
         ref={refContainer}
         className="flex flex-col items-center justify-center gap-12"
       >
+        {/* Heading Section */}
         <motion.div
           initial={{ opacity: 0 }}
           style={{
@@ -56,6 +56,7 @@ export default function HeroHeadline() {
           <h1 className="uppercase text-[44px] font-bold">Eh-Commerce</h1>
         </motion.div>
 
+        {/* Carousel Section */}
         <motion.div ref={carousel} className="h-[300vh] w-full">
           <div className="sticky top-0 overflow-hidden">
             <motion.div
@@ -65,22 +66,30 @@ export default function HeroHeadline() {
                 x: xcarousel,
               }}
             >
-              {HEADLINE_IMAGES.map((imgsrc) => (
+              {HEADLINE_IMAGES.map((imgsrc, idx) => (
                 <motion.div
-                  initial={{ opacity: 0, y: 150 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, ease: "easeInOut" }}
                   key={imgsrc}
+                  initial={{ opacity: 0, y: 150 }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                  }}
+                  viewport={{ once: true, amount: 0.3 }} // Optimize visibility checks
+                  transition={{
+                    delay: idx * 0.1,
+                    duration: 0.6,
+                    ease: "easeInOut",
+                  }}
                   className="relative h-[750px] w-[500px] overflow-hidden rounded-md shadow-lg shrink-0"
                 >
                   <Image
                     src={imgsrc}
-                    alt="Image Showcase"
+                    alt={`Image Showcase ${idx + 1}`}
                     fill
-                    className="object-cover transition-transform duration-500 ease-in-out"
+                    className="object-cover will-change-transform"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-0">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="w-12 h-1 bg-brand-white-200/50 mb-4 rounded-full" />
                   </div>
                 </motion.div>
