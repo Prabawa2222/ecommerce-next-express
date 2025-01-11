@@ -4,6 +4,7 @@ import './globals.css'
 
 import { ThemeProvider } from '@/components/provider/theme-provider'
 import { Toaster } from '@/components/ui/toaster'
+import ReactQueryProvider from '@/components/provider/react-query-provider'
 
 const sora = Sora({
   variable: '--font-sora',
@@ -29,7 +30,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <ReactQueryProvider>{children}</ReactQueryProvider>
           <Toaster />
         </ThemeProvider>
       </body>
