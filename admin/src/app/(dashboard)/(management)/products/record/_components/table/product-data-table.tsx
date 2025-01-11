@@ -1,6 +1,6 @@
 import { formatDateForTable } from '@/lib/utils'
 import { IProductJson } from '@/lib/types/json'
-import { fetchAllProduct } from '@/lib/api/services'
+import { fetchAllProduct } from '@/lib/api/product'
 import { DataTable } from '@/components/table/data-table'
 import { productColumns, ProductTable } from './product-columns'
 

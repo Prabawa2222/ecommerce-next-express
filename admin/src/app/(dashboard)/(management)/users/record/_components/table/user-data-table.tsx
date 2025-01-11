@@ -1,7 +1,7 @@
 import { formatDateForTable } from '@/lib/utils'
 import { IUserJson } from '@/lib/types/json'
-import { fetchAllUser } from '@/lib/api/services'
-import { DataTable } from '../../../../../../../components/table/data-table'
+import { fetchAllUser } from '@/lib/api/user'
+import { DataTable } from '@/components/table/data-table'
 import { userColumns, UserTable } from './user-columns'
 
 async function getData(): Promise<UserTable[]> {

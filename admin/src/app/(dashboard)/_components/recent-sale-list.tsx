@@ -1,9 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchFilteredData, fetchSingleData } from '@/lib/api/services'
-import { IOrderJson, IUserJson } from '@/lib/types/json'
+import { IUserJson } from '@/lib/types/json'
+import { fetchFilteredOrders } from '@/lib/api/order'
+import { fetchSingleUser } from '@/lib/api/user'
 import RecentSaleItem from './recent-sale-item'
 import RecentSaleItemSkeleton from './loading/recent-sale-item-skeleton'
 
@@ -17,32 +19,43 @@ interface IRecentSales {
 }
 
 const RecentSaleList = () => {
-  const [recentSales, setRecentSales] = useState<IRecentSales[]>([])
-
-  const getRecentSales = async () => {
-    try {
-      const orders: IOrderJson[] = await fetchFilteredData('orders', {
+  const { data: orders, isLoading } = useQuery({
+    queryKey: ['orders', 'createdAt', 'desc', 5],
+    queryFn: () =>
+      fetchFilteredOrders({
         sort: 'createdAt',
         order: 'desc',
         limit: 5
       })
+  })
+  const [recentSales, setRecentSales] = useState<IRecentSales[]>([])
 
-      const recentSalesData: IRecentSales[] = await Promise.all(
-        orders.map(async (order) => {
-          const res: IUserJson[] = await fetchSingleData('users', order.userId)
+  const getRecentSales = async () => {
+    try {
+      // const orders: IOrderJson[] = await fetchFilteredOrders( {
+      //   sort: 'createdAt',
+      //   order: 'desc',
+      //   limit: 5
+      // })
 
-          return {
-            user: {
-              image: res[0].image,
-              name: res[0].name,
-              email: res[0].email
-            },
-            amount: order.totalPrice
-          }
-        })
-      )
+      if (orders && orders.length > 0) {
+        const recentSalesData: IRecentSales[] = await Promise.all(
+          orders?.map(async (order) => {
+            const res: IUserJson[] = await fetchSingleUser(order.userId)
 
-      setRecentSales(recentSalesData)
+            return {
+              user: {
+                image: res[0].image,
+                name: res[0].name,
+                email: res[0].email
+              },
+              amount: order.totalPrice
+            }
+          })
+        )
+
+        setRecentSales(recentSalesData)
+      }
     } catch (error) {
       console.error(error)
     }
@@ -50,11 +63,11 @@ const RecentSaleList = () => {
 
   useEffect(() => {
     getRecentSales()
-  }, [])
+  }, [orders])
 
   return (
     <div className='flex flex-col items-center justify-center gap-6'>
-      {recentSales.length > 0 ? (
+      {!isLoading ? (
         recentSales.map((recentSale, index) => (
           <RecentSaleItem recentSale={recentSale} key={index} />
         ))

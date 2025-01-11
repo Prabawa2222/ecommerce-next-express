@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { EditOrderFormSchema } from '@/lib/types/form'
-import { fetchUpdateOrder } from '@/lib/api/services'
+import { fetchUpdateOrder } from '@/lib/api/order'
 import { useToast } from '@/hooks/use-toast'
 import { Button } from '@/components/ui/button'
 import FormErrorMessage from '@/components/form-error-message'

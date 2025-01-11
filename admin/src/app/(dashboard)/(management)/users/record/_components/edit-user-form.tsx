@@ -3,11 +3,11 @@ import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
+import { fetchUpdateUser } from '@/lib/api/user'
 import { useToast } from '@/hooks/use-toast'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { UserTable } from './table/user-columns'
-import { fetchUpdateUser } from '@/lib/api/services'
 import FormErrorMessage from '@/components/form-error-message'
 import {
   Form,

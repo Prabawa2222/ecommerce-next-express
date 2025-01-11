@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 import { EditProductFormSchema } from '@/lib/types/form'
-import { fetchUpdateProduct } from '@/lib/api/services'
+import { fetchUpdateProduct } from '@/lib/api/product'
 import { useToast } from '@/hooks/use-toast'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'

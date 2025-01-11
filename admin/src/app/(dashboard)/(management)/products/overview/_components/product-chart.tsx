@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchAllProduct } from '@/lib/api/services'
-import { IProductJson } from '@/lib/types/json'
+import { fetchAllProduct } from '@/lib/api/product'
 import { months } from '@/lib/contants/chart'
 import DataChart, { ChartDataType } from '@/components/chart/data-chart'
 
@@ -12,14 +12,16 @@ type ProductsChartProps = {
 }
 
 const ProductsChart = ({ className }: ProductsChartProps) => {
+  const { data: products, isLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: fetchAllProduct
+  })
   const [productChartData, setProductChartData] = useState<ChartDataType[]>([])
 
-  const getProductChartData = async () => {
-    const products: IProductJson[] = await fetchAllProduct()
-
+  const getProductChartData = () => {
     const chartDataMap = new Map<string, number[]>()
 
-    products.forEach((product) => {
+    products?.forEach((product) => {
       const date = new Date(product.createdAt)
       const year = date.getFullYear().toString()
       const month = date.getMonth()
@@ -46,13 +48,14 @@ const ProductsChart = ({ className }: ProductsChartProps) => {
 
   useEffect(() => {
     getProductChartData()
-  }, [])
+  }, [products])
 
   return (
     <DataChart
       title='Product Growth'
       label='Total'
       chartData={productChartData}
+      isLoading={isLoading}
       className={className}
     />
   )

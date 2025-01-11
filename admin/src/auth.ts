@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth'
 import Credentials from 'next-auth/providers/credentials'
 
-import { fetchUserByEmailAndPassword } from './lib/api/services'
+import { fetchUserByEmailAndPassword } from './lib/api/user'
 import { IUserJson } from './lib/types/json'
 
 export const { handlers, signIn, signOut, auth } = NextAuth({

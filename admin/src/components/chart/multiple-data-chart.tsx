@@ -44,15 +44,17 @@ export type ChartDataType = {
 type MultipleDataChartProps = {
   title: string
   label: string
-  className?: string
   chartData: ChartDataType[]
+  isLoading?: boolean
+  className?: string
 }
 
 const MultipleDataChart = ({
   title,
   label,
-  className,
-  chartData
+  chartData,
+  isLoading,
+  className
 }: MultipleDataChartProps) => {
   const isMobile = useIsMobile()
   const isDesktop = useIsDesktop()
@@ -135,8 +137,7 @@ const MultipleDataChart = ({
     mobileChartDataIndex
   ])
 
-  if (displayedChartData.length === 0)
-    return <ChartSkeleton className={cn(className)} />
+  if (isLoading) return <ChartSkeleton className={cn(className)} />
 
   return (
     <Card className={cn('p-4 md:p-6', className)}>

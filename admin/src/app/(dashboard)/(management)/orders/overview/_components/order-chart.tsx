@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchAllOrder } from '@/lib/api/services'
-import { IOrderJson } from '@/lib/types/json'
+import { fetchAllOrder } from '@/lib/api/order'
 import { months } from '@/lib/contants/chart'
 import DataChart, { ChartDataType } from '@/components/chart/data-chart'
 
@@ -12,14 +12,16 @@ type OrderChartProps = {
 }
 
 const OrderChart = ({ className }: OrderChartProps) => {
+  const { data: orders, isLoading } = useQuery({
+    queryKey: ['orders'],
+    queryFn: fetchAllOrder
+  })
   const [orderChartData, setOrderChartData] = useState<ChartDataType[]>([])
 
-  const getOrderChartData = async () => {
-    const orders: IOrderJson[] = await fetchAllOrder()
-
+  const getOrderChartData = () => {
     const chartDataMap = new Map<string, number[]>()
 
-    orders.forEach((order) => {
+    orders?.forEach((order) => {
       const date = new Date(order.createdAt)
       const year = date.getFullYear().toString()
       const month = date.getMonth()
@@ -46,13 +48,14 @@ const OrderChart = ({ className }: OrderChartProps) => {
 
   useEffect(() => {
     getOrderChartData()
-  }, [])
+  }, [orders])
 
   return (
     <DataChart
       title='Order Growth'
       label='Total'
       chartData={orderChartData}
+      isLoading={isLoading}
       className={className}
     />
   )

@@ -1,6 +1,6 @@
 'use client'
 
-import { fetchDeleteCategory } from '@/lib/api/services'
+import { fetchDeleteCategory } from '@/lib/api/category'
 import { useToast } from '@/hooks/use-toast'
 
 import DeleteRecordModal from '@/components/modal/delete-record-modal'

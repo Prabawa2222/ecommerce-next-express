@@ -1,13 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import {
-  fetchAllCategory,
-  fetchAllOrder,
-  fetchAllProduct
-} from '@/lib/api/services'
-import { ICategoryJson, IOrderJson, IProductJson } from '@/lib/types/json'
+import { fetchAllOrder } from '@/lib/api/order'
+import { fetchAllProduct } from '@/lib/api/product'
+import { fetchAllCategory } from '@/lib/api/category'
 import { months } from '@/lib/contants/chart'
 import MultipleDataChart, {
   ChartDataType
@@ -18,30 +16,38 @@ type CategoryChartProps = {
 }
 
 const CategoryChart = ({ className }: CategoryChartProps) => {
+  const { data: orders, isLoading: ordersIsLoading } = useQuery({
+    queryKey: ['orders'],
+    queryFn: fetchAllOrder
+  })
+  const { data: products, isLoading: productsIsLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: fetchAllProduct
+  })
+  const { data: categories, isLoading: categoriesIsLoading } = useQuery({
+    queryKey: ['categories'],
+    queryFn: fetchAllCategory
+  })
   const [categoryChartData, setCategoryChartData] = useState<ChartDataType[]>(
     []
   )
 
-  const getCategoryChartData = async () => {
-    const orders: IOrderJson[] = await fetchAllOrder()
-    const products: IProductJson[] = await fetchAllProduct()
-    const categories: ICategoryJson[] = await fetchAllCategory()
-
+  const getCategoryChartData = () => {
     const initialCategoryChartData = orders
-      .filter(
+      ?.filter(
         (order) => order.status === 'completed' || order.status === 'shipped'
       )
       .map((order) => {
-        const product = products.find(
+        const product = products?.find(
           (product) => product.id === order.productId
         )
-        const category = categories.find(
+        const category = categories?.find(
           (category) => category.id === product?.categoryId
         )
 
         if (category) {
           return {
-            category: category?.title,
+            category: category.title,
             createdAt: order.createdAt
           }
         }
@@ -51,7 +57,7 @@ const CategoryChart = ({ className }: CategoryChartProps) => {
     // Group data by category and year, initializing all months
     const chartDataMap = new Map<string, Map<string, number[]>>()
 
-    initialCategoryChartData.forEach(({ category, createdAt }) => {
+    initialCategoryChartData?.forEach(({ category, createdAt }) => {
       const date = new Date(createdAt)
       const year = date.getFullYear().toString()
       const month = date.getMonth()
@@ -87,13 +93,14 @@ const CategoryChart = ({ className }: CategoryChartProps) => {
 
   useEffect(() => {
     getCategoryChartData()
-  }, [])
+  }, [orders, products, categories])
 
   return (
     <MultipleDataChart
       title='Purchased Category'
       label='Total'
       chartData={categoryChartData}
+      isLoading={ordersIsLoading || productsIsLoading || categoriesIsLoading}
       className={className}
     />
   )

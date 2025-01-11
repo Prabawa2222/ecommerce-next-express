@@ -16,10 +16,11 @@ type SummaryCardProps = {
   icon: ForwardRefExoticComponent<
     Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>
   >
+  isLoading?: boolean
 }
 
 const SummaryCard = (props: SummaryCardProps) => {
-  return props.description && props.growth.amount ? (
+  return !props.isLoading ? (
     <Card className='h-fit'>
       <CardHeader>
         <div className='flex items-center justify-between'>

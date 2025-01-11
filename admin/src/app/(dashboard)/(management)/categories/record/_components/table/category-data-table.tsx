@@ -1,6 +1,6 @@
 import { formatDateForTable } from '@/lib/utils'
 import { ICategoryJson } from '@/lib/types/json'
-import { fetchAllCategory } from '@/lib/api/services'
+import { fetchAllCategory } from '@/lib/api/category'
 import { DataTable } from '@/components/table/data-table'
 import { categoryColumns, CategoryTable } from './category-columns'
 

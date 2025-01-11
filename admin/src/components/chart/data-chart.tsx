@@ -39,11 +39,18 @@ export type ChartDataType = {
 type DataChartProps = {
   title: string
   label: string
-  className?: string
+  isLoading?: boolean
   chartData: ChartDataType[]
+  className?: string
 }
 
-const DataChart = ({ title, label, className, chartData }: DataChartProps) => {
+const DataChart = ({
+  title,
+  label,
+  isLoading,
+  chartData,
+  className
+}: DataChartProps) => {
   const isMobile = useIsMobile()
   const isDesktop = useIsDesktop()
 
@@ -101,8 +108,7 @@ const DataChart = ({ title, label, className, chartData }: DataChartProps) => {
     mobileChartDataIndex
   ])
 
-  if (displayedChartData.length === 0)
-    return <ChartSkeleton className={cn(className)} />
+  if (isLoading) return <ChartSkeleton className={cn(className)} />
 
   return (
     <Card className={cn('p-4 md:p-6', className)}>

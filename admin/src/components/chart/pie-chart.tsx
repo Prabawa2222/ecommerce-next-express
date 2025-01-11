@@ -30,6 +30,7 @@ type DataPieChartProps = {
   title: string
   nameKey: string
   chartData: IChartData[]
+  isLoading?: boolean
   className?: string
 }
 
@@ -37,6 +38,7 @@ const DataPieChart = ({
   title,
   nameKey,
   chartData,
+  isLoading,
   className
 }: DataPieChartProps) => {
   const [displayedChartData, setDisplayedChartData] = useState<
@@ -76,8 +78,7 @@ const DataPieChart = ({
     getChartData()
   }, [chartData])
 
-  if (displayedChartData.length === 0)
-    return <PieChartSkeleton className={className} />
+  if (isLoading) return <PieChartSkeleton className={className} />
 
   return (
     <Card className={cn('flex flex-col p-0', className)}>

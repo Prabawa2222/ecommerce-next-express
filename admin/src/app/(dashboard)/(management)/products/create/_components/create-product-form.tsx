@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/form'
 import { Input } from '@/components/ui/input'
 import { AddProductFormSchema } from '@/lib/types/form'
+import { fetchAddProduct } from '@/lib/api/product'
 import SubHeader from '@/components/header/sub-header'
 import { Textarea } from '@/components/ui/textarea'
 import {
@@ -26,7 +27,6 @@ import {
   SelectValue
 } from '@/components/ui/select'
 import FormErrorMessage from '@/components/form-error-message'
-import { fetchAddProduct } from '@/lib/api/services'
 
 const CreateProductForm = () => {
   const form = useForm<z.infer<typeof AddProductFormSchema>>({

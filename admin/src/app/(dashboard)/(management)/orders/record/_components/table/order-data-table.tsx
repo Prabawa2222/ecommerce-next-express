@@ -1,6 +1,6 @@
 import { formatDateForTable } from '@/lib/utils'
 import { IOrderJson } from '@/lib/types/json'
-import { fetchAllOrder } from '@/lib/api/services'
+import { fetchAllOrder } from '@/lib/api/order'
 import { DataTable } from '@/components/table/data-table'
 import { orderColumns, OrderTable } from './order-columns'
 

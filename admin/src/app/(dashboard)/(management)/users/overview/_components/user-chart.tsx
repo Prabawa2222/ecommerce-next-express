@@ -1,9 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchAllUser } from '@/lib/api/services'
-import { IUserJson } from '@/lib/types/json'
+import { fetchAllUser } from '@/lib/api/user'
 import { months } from '@/lib/contants/chart'
 import DataChart, { ChartDataType } from '@/components/chart/data-chart'
 
@@ -13,13 +13,15 @@ type UsersChartProps = {
 
 const UsersChart = ({ className }: UsersChartProps) => {
   const [userChartData, setUserChartData] = useState<ChartDataType[]>([])
+  const { data: users } = useQuery({
+    queryKey: ['users'],
+    queryFn: fetchAllUser
+  })
 
-  const getUsersChartData = async () => {
-    const users: IUserJson[] = await fetchAllUser()
-
+  const getUsersChartData = () => {
     const chartDataMap = new Map<string, number[]>()
 
-    users.forEach((user) => {
+    users?.forEach((user) => {
       const date = new Date(user.createdAt)
       const year = date.getFullYear().toString()
       const month = date.getMonth()
@@ -46,7 +48,7 @@ const UsersChart = ({ className }: UsersChartProps) => {
 
   useEffect(() => {
     getUsersChartData()
-  }, [])
+  }, [users])
 
   return (
     <DataChart

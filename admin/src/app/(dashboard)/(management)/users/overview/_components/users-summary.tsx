@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { UsersRound } from 'lucide-react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchAllUser } from '@/lib/api/services'
-import { IUserJson } from '@/lib/types/json'
+import { fetchAllUser } from '@/lib/api/user'
 import { cn, filterDataByMonth } from '@/lib/utils'
 import Summary from '@/components/summary/summary'
 import SummaryCard from '@/components/summary/summary-card'
@@ -33,44 +33,41 @@ const UsersSummary = ({ className }: UsersSummaryProps) => {
     }
   })
 
-  const getUsers = async () => {
-    const res: IUserJson[] = await fetchAllUser()
+  const { data: users, isLoading } = useQuery({
+    queryKey: ['users'],
+    queryFn: fetchAllUser
+  })
 
+  const getUsers = () => {
     // Find current month and last month data
-    const currentMonthUsers = filterDataByMonth(res, 'currentMonth')
-    const lastMonthUsers = filterDataByMonth(res, 'lastMonth')
+    if (users && users.length > 0) {
+      const currentMonthUsers = filterDataByMonth(users, 'currentMonth')
+      const lastMonthUsers = filterDataByMonth(users, 'lastMonth')
 
-    if (lastMonthUsers.length === 0) {
-      return {
-        total: res.length || 0,
-        growth: currentMonthUsers.length > 0 ? 100 : 0
+      if (lastMonthUsers.length === 0) {
+        return {
+          total: users.length || 0,
+          growth: currentMonthUsers.length > 0 ? 100 : 0
+        }
       }
-    }
 
-    return {
-      total: res.length || 0,
-      growth: Math.round(
-        ((currentMonthUsers.length - lastMonthUsers.length) /
-          lastMonthUsers.length) *
-          100
-      )
-    }
-  }
-
-  const getSummaryData = async () => {
-    try {
-      const user: SummaryType = await getUsers()
+      const userData = {
+        total: users.length || 0,
+        growth: Math.round(
+          ((currentMonthUsers.length - lastMonthUsers.length) /
+            lastMonthUsers.length) *
+            100
+        )
+      }
       setSummary({
-        user
+        user: userData
       })
-    } catch (error) {
-      console.error(error)
     }
   }
 
   useEffect(() => {
-    getSummaryData()
-  }, [])
+    getUsers()
+  }, [users])
 
   return (
     <Summary
@@ -87,6 +84,7 @@ const UsersSummary = ({ className }: UsersSummaryProps) => {
         description={summary.user.total.toString()}
         growth={{ amount: summary.user.growth || 0, format: 'percentage' }}
         icon={UsersRound}
+        isLoading={isLoading}
       />
     </Summary>
   )

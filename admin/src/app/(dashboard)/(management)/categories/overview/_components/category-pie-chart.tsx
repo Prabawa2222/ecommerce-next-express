@@ -1,13 +1,11 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
 
-import {
-  fetchAllCategory,
-  fetchAllOrder,
-  fetchAllProduct
-} from '@/lib/api/services'
-import { ICategoryJson, IOrderJson, IProductJson } from '@/lib/types/json'
+import { fetchAllOrder } from '@/lib/api/order'
+import { fetchAllProduct } from '@/lib/api/product'
+import { fetchAllCategory } from '@/lib/api/category'
 import DataPieChart, { IChartData } from '@/components/chart/pie-chart'
 
 type CategoryPieChartProps = {
@@ -15,24 +13,32 @@ type CategoryPieChartProps = {
 }
 
 const CategoryPieChart = ({ className }: CategoryPieChartProps) => {
+  const { data: orders, isLoading: ordersIsLoading } = useQuery({
+    queryKey: ['orders'],
+    queryFn: fetchAllOrder
+  })
+  const { data: products, isLoading: productsIsLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: fetchAllProduct
+  })
+  const { data: categories, isLoading: categoriesIsLoading } = useQuery({
+    queryKey: ['categories'],
+    queryFn: fetchAllCategory
+  })
   const [categoryChartData, setCategoryChartData] = useState<IChartData[]>([])
 
-  const getCategoryChartData = async () => {
-    const orders: IOrderJson[] = await fetchAllOrder()
-    const products: IProductJson[] = await fetchAllProduct()
-    const categories: ICategoryJson[] = await fetchAllCategory()
-
+  const getCategoryChartData = () => {
     const categoryAmountMap: Record<string, number> = {}
 
     orders
-      .filter(
+      ?.filter(
         (order) => order.status === 'completed' || order.status === 'shipped'
       )
       .forEach((order) => {
-        const product = products.find(
+        const product = products?.find(
           (product) => product.id === order.productId
         )
-        const category = categories.find(
+        const category = categories?.find(
           (category) => category.id === product?.categoryId
         )
 
@@ -54,13 +60,14 @@ const CategoryPieChart = ({ className }: CategoryPieChartProps) => {
 
   useEffect(() => {
     getCategoryChartData()
-  }, [])
+  }, [orders, products, categories])
 
   return (
     <DataPieChart
       title='Total Purchases'
       nameKey='category'
       chartData={categoryChartData}
+      isLoading={ordersIsLoading || productsIsLoading || categoriesIsLoading}
       className={className}
     />
   )

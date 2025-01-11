@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { Boxes } from 'lucide-react'
+import { useQuery } from '@tanstack/react-query'
 
-import { fetchAllProduct } from '@/lib/api/services'
-import { IProductJson } from '@/lib/types/json'
+import { fetchAllProduct } from '@/lib/api/product'
 import { cn, filterDataByMonth } from '@/lib/utils'
 import Summary from '@/components/summary/summary'
 import SummaryCard from '@/components/summary/summary-card'
@@ -25,7 +25,10 @@ type UsersSummaryProps = {
 
 const ProductsSummary = ({ className }: UsersSummaryProps) => {
   const { open } = useSidebar()
-
+  const { data: products, isLoading } = useQuery({
+    queryKey: ['products'],
+    queryFn: fetchAllProduct
+  })
   const [summary, setSummary] = useState<ISummary>({
     product: {
       total: 0,
@@ -33,32 +36,25 @@ const ProductsSummary = ({ className }: UsersSummaryProps) => {
     }
   })
 
-  const getProducts = async () => {
-    const res: IProductJson[] = await fetchAllProduct()
+  const getProducts = () => {
+    if (products && products.length > 0) {
+      // Find current month data
+      const currentMonthProducts = filterDataByMonth(products, 'currentMonth')
 
-    // Find current month data
-    const currentMonthProducts = filterDataByMonth(res, 'currentMonth')
-
-    return {
-      total: res.length || 0,
-      growth: currentMonthProducts.length
-    }
-  }
-
-  const getSummaryData = async () => {
-    try {
-      const product: SummaryType = await getProducts()
-      setSummary({
-        product
-      })
-    } catch (error) {
-      console.error(error)
+      const productData = {
+        total: products.length || 0,
+        growth: currentMonthProducts.length
+      }
+      setSummary((prev) => ({
+        ...prev,
+        product: productData
+      }))
     }
   }
 
   useEffect(() => {
-    getSummaryData()
-  }, [])
+    getProducts()
+  }, [products])
 
   return (
     <Summary
@@ -75,6 +71,7 @@ const ProductsSummary = ({ className }: UsersSummaryProps) => {
         description={summary.product.total.toString()}
         growth={{ amount: summary.product.growth || 0, format: 'count' }}
         icon={Boxes}
+        isLoading={isLoading}
       />
     </Summary>
   )

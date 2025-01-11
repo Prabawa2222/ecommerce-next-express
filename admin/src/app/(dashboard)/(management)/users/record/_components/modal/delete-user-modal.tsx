@@ -1,6 +1,6 @@
 'use client'
 
-import { fetchDeleteUser } from '@/lib/api/services'
+import { fetchDeleteUser } from '@/lib/api/user'
 import { useToast } from '@/hooks/use-toast'
 
 import DeleteRecordModal from '@/components/modal/delete-record-modal'
